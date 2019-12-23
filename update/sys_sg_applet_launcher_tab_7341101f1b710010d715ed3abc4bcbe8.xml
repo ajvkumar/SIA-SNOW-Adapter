@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_applet_launcher_tab">
+    <sys_sg_applet_launcher_tab action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applet_launcher display_value="SIA-Adapter">bf41101f1b710010d715ed3abc4bcbe6</applet_launcher>
+        <icon display_value="Home SIA-Adapter">b341101f1b710010d715ed3abc4bcbe8</icon>
+        <label>SIA-Adapter</label>
+        <roles>x_105558_sia_adapt.sia_user</roles>
+        <sys_class_name>sys_sg_applet_launcher_tab</sys_class_name>
+        <sys_created_by>ajvkumar</sys_created_by>
+        <sys_created_on>2019-12-23 14:24:12</sys_created_on>
+        <sys_id>7341101f1b710010d715ed3abc4bcbe8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>SIA-Adapter</sys_name>
+        <sys_package display_value="SIA-Adapter" source="x_105558_sia_adapt">c1ff409b1b710010d715ed3abc4bcb47</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SIA-Adapter">c1ff409b1b710010d715ed3abc4bcb47</sys_scope>
+        <sys_update_name>sys_sg_applet_launcher_tab_7341101f1b710010d715ed3abc4bcbe8</sys_update_name>
+        <sys_updated_by>ajvkumar</sys_updated_by>
+        <sys_updated_on>2019-12-23 14:24:12</sys_updated_on>
+    </sys_sg_applet_launcher_tab>
+</record_update>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_embedded_help_role">
+    <sys_embedded_help_role action="INSERT_OR_UPDATE">
+        <order>1000</order>
+        <role display_value="x_105558_sia_adapt.sia_user" name="x_105558_sia_adapt.sia_user">41009c131b310010d715ed3abc4bcb69</role>
+        <sys_class_name>sys_embedded_help_role</sys_class_name>
+        <sys_created_by>ajvkumar</sys_created_by>
+        <sys_created_on>2019-12-23 14:18:33</sys_created_on>
+        <sys_id>01009c131b310010d715ed3abc4bcb6c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>41009c131b310010d715ed3abc4bcb69</sys_name>
+        <sys_package display_value="SIA-Adapter" source="x_105558_sia_adapt">c1ff409b1b710010d715ed3abc4bcb47</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SIA-Adapter">c1ff409b1b710010d715ed3abc4bcb47</sys_scope>
+        <sys_update_name>sys_embedded_help_role_01009c131b310010d715ed3abc4bcb6c</sys_update_name>
+        <sys_updated_by>ajvkumar</sys_updated_by>
+        <sys_updated_on>2019-12-23 14:18:33</sys_updated_on>
+    </sys_embedded_help_role>
+</record_update>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="update_synch=true" extends="sys_metadata" label="Transaction Manager" max_length="40" name="x_105558_sia_adapt_transaction_manager" text_index="true" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="NNITID" max_length="40" name="nnitid" type="string"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+    </element>
+</database>

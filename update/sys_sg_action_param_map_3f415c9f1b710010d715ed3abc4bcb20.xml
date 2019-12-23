@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_action_param_map">
+    <sys_sg_action_param_map action="INSERT_OR_UPDATE">
+        <button display_value="New Button (Transaction Manager)">33415c9f1b710010d715ed3abc4bcb1f</button>
+        <item_parameter display_value="Transaction Manager number">b3415c9f1b710010d715ed3abc4bcb1e</item_parameter>
+        <sys_class_name>sys_sg_action_param_map</sys_class_name>
+        <sys_created_by>ajvkumar</sys_created_by>
+        <sys_created_on>2019-12-23 14:24:13</sys_created_on>
+        <sys_id>3f415c9f1b710010d715ed3abc4bcb20</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>b3415c9f1b710010d715ed3abc4bcb1e</sys_name>
+        <sys_package display_value="SIA-Adapter" source="x_105558_sia_adapt">c1ff409b1b710010d715ed3abc4bcb47</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SIA-Adapter">c1ff409b1b710010d715ed3abc4bcb47</sys_scope>
+        <sys_update_name>sys_sg_action_param_map_3f415c9f1b710010d715ed3abc4bcb20</sys_update_name>
+        <sys_updated_by>ajvkumar</sys_updated_by>
+        <sys_updated_on>2019-12-23 14:24:13</sys_updated_on>
+        <ui_parameter display_value="Number">3b415c9f1b710010d715ed3abc4bcb20</ui_parameter>
+    </sys_sg_action_param_map>
+</record_update>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_master_item">
+    <sys_sg_master_item action="INSERT_OR_UPDATE">
+        <condition_order/>
+        <datasource_table>x_105558_sia_adapt_transaction_manager</datasource_table>
+        <datasource_table_condition/>
+        <embedded_screen display_value="Transaction Manager Form Screen">7b415c9f1b710010d715ed3abc4bcb15</embedded_screen>
+        <item_view display_value="Transaction Manager List Screen Item View">b341101f1b710010d715ed3abc4bcbea</item_view>
+        <name>Transaction Manager master_item</name>
+        <sys_class_name>sys_sg_master_item</sys_class_name>
+        <sys_created_by>ajvkumar</sys_created_by>
+        <sys_created_on>2019-12-23 14:24:12</sys_created_on>
+        <sys_id>b3415c9f1b710010d715ed3abc4bcb18</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Transaction Manager master_item</sys_name>
+        <sys_package display_value="SIA-Adapter" source="x_105558_sia_adapt">c1ff409b1b710010d715ed3abc4bcb47</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SIA-Adapter">c1ff409b1b710010d715ed3abc4bcb47</sys_scope>
+        <sys_update_name>sys_sg_master_item_b3415c9f1b710010d715ed3abc4bcb18</sys_update_name>
+        <sys_updated_by>ajvkumar</sys_updated_by>
+        <sys_updated_on>2019-12-23 14:24:12</sys_updated_on>
+    </sys_sg_master_item>
+</record_update>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_aw_module">
+    <sys_aw_module action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <content display_value="Inbox Module Content">2c41589f1b710010d715ed3abc4bcb50</content>
+        <content_attrs/>
+        <content_component display_value="sn-inbox">c1fbc4bb77b31300c438c277d8106134</content_component>
+        <content_tag/>
+        <detail display_value="Inbox Module Detail">e441589f1b710010d715ed3abc4bcb55</detail>
+        <detail_attrs/>
+        <detail_component display_value="sn-inbox-empty">ee222d2bff222300294153bd6338f113</detail_component>
+        <detail_tag/>
+        <hide_until_ready>false</hide_until_ready>
+        <icon>inbox-outline</icon>
+        <id>inbox</id>
+        <label>Inbox</label>
+        <order>200</order>
+        <roles/>
+        <sys_class_name>sys_aw_module</sys_class_name>
+        <sys_created_by>ajvkumar</sys_created_by>
+        <sys_created_on>2019-12-23 14:23:59</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>e841589f1b710010d715ed3abc4bcb49</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>inbox</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="SIA-Adapter" source="x_105558_sia_adapt">c1ff409b1b710010d715ed3abc4bcb47</sys_package>
+        <sys_policy/>
+        <sys_props/>
+        <sys_scope display_value="SIA-Adapter">c1ff409b1b710010d715ed3abc4bcb47</sys_scope>
+        <sys_update_name>sys_aw_module_e841589f1b710010d715ed3abc4bcb49</sys_update_name>
+        <sys_updated_by>ajvkumar</sys_updated_by>
+        <sys_updated_on>2019-12-23 14:23:59</sys_updated_on>
+        <toolbar_button display_value="Inbox Button">2041589f1b710010d715ed3abc4bcb4a</toolbar_button>
+        <type>master_detail</type>
+        <workspace_config display_value="SIA-Adapter">7b31545f1b710010d715ed3abc4bcb58</workspace_config>
+    </sys_aw_module>
+    <sys_variable_value action="delete_multiple" query="document_key=e841589f1b710010d715ed3abc4bcb49"/>
+</record_update>

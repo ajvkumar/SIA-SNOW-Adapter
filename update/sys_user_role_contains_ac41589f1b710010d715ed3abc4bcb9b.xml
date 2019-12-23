@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role_contains">
+    <sys_user_role_contains action="INSERT_OR_UPDATE">
+        <contains display_value="workspace_user" name="workspace_user">3bf8d5b65344130084acddeeff7b122b</contains>
+        <role display_value="sia_adapter" name="sia_adapter">2c41589f1b710010d715ed3abc4bcb93</role>
+        <sys_class_name>sys_user_role_contains</sys_class_name>
+        <sys_created_by>ajvkumar</sys_created_by>
+        <sys_created_on>2019-12-23 14:24:00</sys_created_on>
+        <sys_id>ac41589f1b710010d715ed3abc4bcb9b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>workspace_user.sia_adapter</sys_name>
+        <sys_package display_value="SIA-Adapter" source="x_105558_sia_adapt">c1ff409b1b710010d715ed3abc4bcb47</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SIA-Adapter">c1ff409b1b710010d715ed3abc4bcb47</sys_scope>
+        <sys_update_name>sys_user_role_contains_ac41589f1b710010d715ed3abc4bcb9b</sys_update_name>
+        <sys_updated_by>ajvkumar</sys_updated_by>
+        <sys_updated_on>2019-12-23 14:24:00</sys_updated_on>
+    </sys_user_role_contains>
+</record_update>

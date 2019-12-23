@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_aw_list">
+    <sys_aw_list action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <category display_value="Transaction Managers">1441589f1b710010d715ed3abc4bcb06</category>
+        <columns>nnitid,number,sys_created_by,sys_created_on,sys_id,sys_mod_count,sys_tags,sys_updated_by,sys_updated_on</columns>
+        <condition/>
+        <groups/>
+        <order>100</order>
+        <roles/>
+        <sys_class_name>sys_aw_list</sys_class_name>
+        <sys_created_by>ajvkumar</sys_created_by>
+        <sys_created_on>2019-12-23 14:23:58</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>d041589f1b710010d715ed3abc4bcb0a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>All</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="SIA-Adapter" source="x_105558_sia_adapt">c1ff409b1b710010d715ed3abc4bcb47</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SIA-Adapter">c1ff409b1b710010d715ed3abc4bcb47</sys_scope>
+        <sys_update_name>sys_aw_list_d041589f1b710010d715ed3abc4bcb0a</sys_update_name>
+        <sys_updated_by>ajvkumar</sys_updated_by>
+        <sys_updated_on>2019-12-23 14:23:58</sys_updated_on>
+        <table>x_105558_sia_adapt_transaction_manager</table>
+        <title>All</title>
+        <workspace display_value="SIA-Adapter">7b31545f1b710010d715ed3abc4bcb58</workspace>
+    </sys_aw_list>
+</record_update>
