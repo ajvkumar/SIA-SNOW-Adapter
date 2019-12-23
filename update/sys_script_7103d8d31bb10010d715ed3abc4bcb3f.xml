@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>false</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>incident</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>NewIncident</name>
+        <order>1000</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[//This business rules is going to push all the newly created incidents to the Transaction Manager table.
+gs.debug('Inside the BR-log 1');
+(function executeRule(current, previous /*null when async*/) 
+ {
+	gs.addInfoMessage('Inside the BR');
+	gs.info('Inside the BR-log');
+
+	// Here is the code for inserting the details of the newly created incidents into the Transaction manager table.
+	var newTXNRecord = new GlideRecord('x_105558_sia_adapt_transactionmanager');      
+	
+	newTXNRecord.initialize();                                                                          // initialization of the object.
+	
+	//place the values of the incident into the respective fields of the Transaction Manager table.
+	
+		newTXNRecord.setValue('entity','Incident');
+		newTXNRecord.setValue('operation','NewTicket');
+		newTXNRecord.setValue('direction', 'Outbound');
+		newTXNRecord.setValue('transaction_status', 'New');
+		newTXNRecord.setValue('ticket_number', current.sys_id);
+		newTXNRecord.setValue('short_description', current.short_description.getDisplayValue().trim());
+		newTXNRecord.setValue('description', current.description.getDisplayValue().trim());
+		newTXNRecord.setValue('state', current.state.getDisplayValue().trim());
+		newTXNRecord.setValue('status_reason', current.hold_reason.getDisplayValue().trim());
+		newTXNRecord.setValue('service', current.business_service.getDisplayValue().trim());
+		newTXNRecord.setValue('service_ci', current.business_service);
+		newTXNRecord.setValue('impact', current.impact);
+		newTXNRecord.setValue('urgency', current.urgency);
+		newTXNRecord.setValue('priority', current.priority);
+		newTXNRecord.setValue('assignment_group', current.assignment_group);
+		newTXNRecord.setValue('assigned_to', current.assigned_to);
+	
+		// Now prepare the Pay load to be sent to the destination ITSM tool.
+		var jsonPayload = {};
+		jsonPayload.CorrelationID = current.number.getDisplayValue().toString();
+		jsonPayload.Requester = current.caller_id.getDisplayValue().toString();
+		jsonPayload.AssignmentGroup = current.assignment_group.getDisplayValue().toString();
+		jsonPayload.AssignmentGroupCorrelationID = current.assignment_group.toString();
+		jsonPayload.Service = current.business_service.getDisplayValue().toString();
+		jsonPayload.ServiceCorrelationID = current.business_service.toString();
+		jsonPayload.Summary = current.short_description.toString();
+		jsonPayload.Description = current.description.toString();
+		jsonPayload.Source = current.contact_type.getDisplayValue().toString();
+		jsonPayload.Impact = current.impact.getDisplayValue().toString();
+		jsonPayload.Urgency = current.urgency.getDisplayValue().toString();
+		jsonPayload.State = current.state.getDisplayValue().toString();
+	
+		jsonPayload.StateReason = current.hold_reason.getDisplayValue().toString();
+		jsonPayload.GxPImpact = 'No'+"";
+		jsonPayload.Resolution = current.close_notes.getDisplayValue().toString();
+		
+		var jsonObject = new global.JSON();
+		var str = jsonObject.encode(jsonPayload);
+	
+		// the code for creating a JSON Payload ends here.
+	
+		newTXNRecord.setValue('payload', str.toString().trim());
+	
+		//Now, insert the values into the table.
+		newTXNRecord.insert();
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>ajvkumar</sys_created_by>
+        <sys_created_on>2019-12-23 14:34:10</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>7103d8d31bb10010d715ed3abc4bcb3f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>NewIncident</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="SIA-Adapter" source="x_105558_sia_adapt">c1ff409b1b710010d715ed3abc4bcb47</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SIA-Adapter">c1ff409b1b710010d715ed3abc4bcb47</sys_scope>
+        <sys_update_name>sys_script_7103d8d31bb10010d715ed3abc4bcb3f</sys_update_name>
+        <sys_updated_by>ajvkumar</sys_updated_by>
+        <sys_updated_on>2019-12-23 14:34:10</sys_updated_on>
+        <template/>
+        <when>async</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=7103d8d31bb10010d715ed3abc4bcb3f"/>
+</record_update>
