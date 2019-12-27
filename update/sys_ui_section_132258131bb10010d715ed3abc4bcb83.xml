@@ -42,6 +42,230 @@
             <sys_user/>
             <type/>
         </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>state</element>
+            <position>3</position>
+            <sys_created_by>ajvkumar</sys_created_by>
+            <sys_created_on>2019-12-27 11:47:56</sys_created_on>
+            <sys_id>95e3dce41b020010d715ed3abc4bcb7e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_105558_sia_adapt_transaction_manager" sys_domain="global" view="Default view">132258131bb10010d715ed3abc4bcb83</sys_ui_section>
+            <sys_updated_by>ajvkumar</sys_updated_by>
+            <sys_updated_on>2019-12-27 11:47:56</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>status_reason</element>
+            <position>4</position>
+            <sys_created_by>ajvkumar</sys_created_by>
+            <sys_created_on>2019-12-27 11:49:32</sys_created_on>
+            <sys_id>fc4414281b020010d715ed3abc4bcb55</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_105558_sia_adapt_transaction_manager" sys_domain="global" view="Default view">132258131bb10010d715ed3abc4bcb83</sys_ui_section>
+            <sys_updated_by>ajvkumar</sys_updated_by>
+            <sys_updated_on>2019-12-27 11:49:32</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>direction</element>
+            <position>5</position>
+            <sys_created_by>ajvkumar</sys_created_by>
+            <sys_created_on>2019-12-27 12:15:24</sys_created_on>
+            <sys_id>732ad86c1b020010d715ed3abc4bcbd9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_105558_sia_adapt_transaction_manager" sys_domain="global" view="Default view">132258131bb10010d715ed3abc4bcb83</sys_ui_section>
+            <sys_updated_by>ajvkumar</sys_updated_by>
+            <sys_updated_on>2019-12-27 12:15:24</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>assigned_to</element>
+            <position>6</position>
+            <sys_created_by>ajvkumar</sys_created_by>
+            <sys_created_on>2019-12-27 12:19:13</sys_created_on>
+            <sys_id>3b0bd4ac1b020010d715ed3abc4bcbed</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_105558_sia_adapt_transaction_manager" sys_domain="global" view="Default view">132258131bb10010d715ed3abc4bcb83</sys_ui_section>
+            <sys_updated_by>ajvkumar</sys_updated_by>
+            <sys_updated_on>2019-12-27 12:19:13</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>assignment_group</element>
+            <position>7</position>
+            <sys_created_by>ajvkumar</sys_created_by>
+            <sys_created_on>2019-12-27 12:20:10</sys_created_on>
+            <sys_id>714b58ac1b020010d715ed3abc4bcbe2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_105558_sia_adapt_transaction_manager" sys_domain="global" view="Default view">132258131bb10010d715ed3abc4bcb83</sys_ui_section>
+            <sys_updated_by>ajvkumar</sys_updated_by>
+            <sys_updated_on>2019-12-27 12:20:10</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>entity</element>
+            <position>8</position>
+            <sys_created_by>ajvkumar</sys_created_by>
+            <sys_created_on>2019-12-27 12:21:55</sys_created_on>
+            <sys_id>97abd0ec1b020010d715ed3abc4bcb6f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_105558_sia_adapt_transaction_manager" sys_domain="global" view="Default view">132258131bb10010d715ed3abc4bcb83</sys_ui_section>
+            <sys_updated_by>ajvkumar</sys_updated_by>
+            <sys_updated_on>2019-12-27 12:21:55</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>impact</element>
+            <position>9</position>
+            <sys_created_by>ajvkumar</sys_created_by>
+            <sys_created_on>2019-12-27 12:29:45</sys_created_on>
+            <sys_id>427d5c201b420010d715ed3abc4bcb6f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_105558_sia_adapt_transaction_manager" sys_domain="global" view="Default view">132258131bb10010d715ed3abc4bcb83</sys_ui_section>
+            <sys_updated_by>ajvkumar</sys_updated_by>
+            <sys_updated_on>2019-12-27 12:29:45</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>operation</element>
+            <position>10</position>
+            <sys_created_by>ajvkumar</sys_created_by>
+            <sys_created_on>2019-12-27 12:38:07</sys_created_on>
+            <sys_id>6c6f5ca01b420010d715ed3abc4bcb0b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_105558_sia_adapt_transaction_manager" sys_domain="global" view="Default view">132258131bb10010d715ed3abc4bcb83</sys_ui_section>
+            <sys_updated_by>ajvkumar</sys_updated_by>
+            <sys_updated_on>2019-12-27 12:38:07</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>payload</element>
+            <position>11</position>
+            <sys_created_by>ajvkumar</sys_created_by>
+            <sys_created_on>2019-12-27 12:40:06</sys_created_on>
+            <sys_id>a5df9ca01b420010d715ed3abc4bcb0a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_105558_sia_adapt_transaction_manager" sys_domain="global" view="Default view">132258131bb10010d715ed3abc4bcb83</sys_ui_section>
+            <sys_updated_by>ajvkumar</sys_updated_by>
+            <sys_updated_on>2019-12-27 12:40:06</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>priority</element>
+            <position>12</position>
+            <sys_created_by>ajvkumar</sys_created_by>
+            <sys_created_on>2019-12-27 12:40:38</sys_created_on>
+            <sys_id>e5ffd4e01b420010d715ed3abc4bcbd1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_105558_sia_adapt_transaction_manager" sys_domain="global" view="Default view">132258131bb10010d715ed3abc4bcb83</sys_ui_section>
+            <sys_updated_by>ajvkumar</sys_updated_by>
+            <sys_updated_on>2019-12-27 12:40:38</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>response</element>
+            <position>13</position>
+            <sys_created_by>ajvkumar</sys_created_by>
+            <sys_created_on>2019-12-27 12:42:58</sys_created_on>
+            <sys_id>6370ace01b420010d715ed3abc4bcb67</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_105558_sia_adapt_transaction_manager" sys_domain="global" view="Default view">132258131bb10010d715ed3abc4bcb83</sys_ui_section>
+            <sys_updated_by>ajvkumar</sys_updated_by>
+            <sys_updated_on>2019-12-27 12:42:58</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>response_code</element>
+            <position>14</position>
+            <sys_created_by>ajvkumar</sys_created_by>
+            <sys_created_on>2019-12-27 12:43:37</sys_created_on>
+            <sys_id>91a0ece01b420010d715ed3abc4bcb0a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_105558_sia_adapt_transaction_manager" sys_domain="global" view="Default view">132258131bb10010d715ed3abc4bcb83</sys_ui_section>
+            <sys_updated_by>ajvkumar</sys_updated_by>
+            <sys_updated_on>2019-12-27 12:43:37</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>service_ci</element>
+            <position>15</position>
+            <sys_created_by>ajvkumar</sys_created_by>
+            <sys_created_on>2019-12-27 12:45:01</sys_created_on>
+            <sys_id>a5f0e8241b420010d715ed3abc4bcb8a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_105558_sia_adapt_transaction_manager" sys_domain="global" view="Default view">132258131bb10010d715ed3abc4bcb83</sys_ui_section>
+            <sys_updated_by>ajvkumar</sys_updated_by>
+            <sys_updated_on>2019-12-27 12:45:01</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>ticket_number</element>
+            <position>16</position>
+            <sys_created_by>ajvkumar</sys_created_by>
+            <sys_created_on>2019-12-27 13:00:08</sys_created_on>
+            <sys_id>8b64a8e41b420010d715ed3abc4bcb29</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_105558_sia_adapt_transaction_manager" sys_domain="global" view="Default view">132258131bb10010d715ed3abc4bcb83</sys_ui_section>
+            <sys_updated_by>ajvkumar</sys_updated_by>
+            <sys_updated_on>2019-12-27 13:00:08</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>transaction_status</element>
+            <position>17</position>
+            <sys_created_by>ajvkumar</sys_created_by>
+            <sys_created_on>2019-12-27 13:02:49</sys_created_on>
+            <sys_id>de0528281b420010d715ed3abc4bcb0a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_105558_sia_adapt_transaction_manager" sys_domain="global" view="Default view">132258131bb10010d715ed3abc4bcb83</sys_ui_section>
+            <sys_updated_by>ajvkumar</sys_updated_by>
+            <sys_updated_on>2019-12-27 13:02:49</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>urgency</element>
+            <position>18</position>
+            <sys_created_by>ajvkumar</sys_created_by>
+            <sys_created_on>2019-12-27 13:07:36</sys_created_on>
+            <sys_id>6c2668681b420010d715ed3abc4bcb92</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_105558_sia_adapt_transaction_manager" sys_domain="global" view="Default view">132258131bb10010d715ed3abc4bcb83</sys_ui_section>
+            <sys_updated_by>ajvkumar</sys_updated_by>
+            <sys_updated_on>2019-12-27 13:07:36</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
         <sys_ui_section action="INSERT_OR_UPDATE">
             <caption/>
             <header>false</header>

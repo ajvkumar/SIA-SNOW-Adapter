@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="impact" table="x_105558_sia_adapt_transaction_manager" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>impact</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>1 - High</label>
+            <language>en</language>
+            <name>x_105558_sia_adapt_transaction_manager</name>
+            <sequence>0</sequence>
+            <sys_created_by>ajvkumar</sys_created_by>
+            <sys_created_on>2019-12-27 12:29:51</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>df7dd8201b420010d715ed3abc4bcb8f</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>ajvkumar</sys_updated_by>
+            <sys_updated_on>2019-12-27 12:30:11</sys_updated_on>
+            <value>1</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>impact</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>2 - Medium</label>
+            <language>en</language>
+            <name>x_105558_sia_adapt_transaction_manager</name>
+            <sequence>1</sequence>
+            <sys_created_by>ajvkumar</sys_created_by>
+            <sys_created_on>2019-12-27 12:30:29</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c08d5c201b420010d715ed3abc4bcb93</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>ajvkumar</sys_updated_by>
+            <sys_updated_on>2019-12-27 12:30:36</sys_updated_on>
+            <value>2</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>impact</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>3 - Low</label>
+            <language>en</language>
+            <name>x_105558_sia_adapt_transaction_manager</name>
+            <sequence>2</sequence>
+            <sys_created_by>ajvkumar</sys_created_by>
+            <sys_created_on>2019-12-27 12:30:51</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b8ad94ec1b020010d715ed3abc4bcb1f</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>ajvkumar</sys_updated_by>
+            <sys_updated_on>2019-12-27 12:30:57</sys_updated_on>
+            <value>3</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>impact</element>
+            <name>x_105558_sia_adapt_transaction_manager</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>ajvkumar</sys_created_by>
+            <sys_created_on>2019-12-27 12:29:51</sys_created_on>
+            <sys_id>1b7dd8201b420010d715ed3abc4bcb90</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>impact</sys_name>
+            <sys_package display_value="SIA-Adapter" source="x_105558_sia_adapt">c1ff409b1b710010d715ed3abc4bcb47</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="SIA-Adapter">c1ff409b1b710010d715ed3abc4bcb47</sys_scope>
+            <sys_update_name>sys_choice_x_105558_sia_adapt_transaction_manager_impact</sys_update_name>
+            <sys_updated_by>ajvkumar</sys_updated_by>
+            <sys_updated_on>2019-12-27 12:29:51</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

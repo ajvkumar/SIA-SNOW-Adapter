@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="entity" table="x_105558_sia_adapt_transaction_manager" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>entity</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Change</label>
+            <language>en</language>
+            <name>x_105558_sia_adapt_transaction_manager</name>
+            <sequence>0</sequence>
+            <sys_created_by>ajvkumar</sys_created_by>
+            <sys_created_on>2019-12-27 12:22:04</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>65bb54ec1b020010d715ed3abc4bcbbf</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>ajvkumar</sys_updated_by>
+            <sys_updated_on>2019-12-27 12:22:27</sys_updated_on>
+            <value>Change</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>entity</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Incident</label>
+            <language>en</language>
+            <name>x_105558_sia_adapt_transaction_manager</name>
+            <sequence>1</sequence>
+            <sys_created_by>ajvkumar</sys_created_by>
+            <sys_created_on>2019-12-27 12:22:34</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>02bb54ac1b020010d715ed3abc4bcbaf</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>ajvkumar</sys_updated_by>
+            <sys_updated_on>2019-12-27 12:22:39</sys_updated_on>
+            <value>Incident</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>entity</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Problem</label>
+            <language>en</language>
+            <name>x_105558_sia_adapt_transaction_manager</name>
+            <sequence>2</sequence>
+            <sys_created_by>ajvkumar</sys_created_by>
+            <sys_created_on>2019-12-27 12:22:45</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>70db18ec1b020010d715ed3abc4bcb12</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>ajvkumar</sys_updated_by>
+            <sys_updated_on>2019-12-27 12:22:51</sys_updated_on>
+            <value>Problem</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>entity</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>ServiceRequest</label>
+            <language>en</language>
+            <name>x_105558_sia_adapt_transaction_manager</name>
+            <sequence>3</sequence>
+            <sys_created_by>ajvkumar</sys_created_by>
+            <sys_created_on>2019-12-27 12:22:58</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>efdbd4ec1b020010d715ed3abc4bcb4f</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>ajvkumar</sys_updated_by>
+            <sys_updated_on>2019-12-27 12:23:06</sys_updated_on>
+            <value>ServiceRequest</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>entity</element>
+            <name>x_105558_sia_adapt_transaction_manager</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>ajvkumar</sys_created_by>
+            <sys_created_on>2019-12-27 12:22:04</sys_created_on>
+            <sys_id>adbb54ec1b020010d715ed3abc4bcbbf</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>entity</sys_name>
+            <sys_package display_value="SIA-Adapter" source="x_105558_sia_adapt">c1ff409b1b710010d715ed3abc4bcb47</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="SIA-Adapter">c1ff409b1b710010d715ed3abc4bcb47</sys_scope>
+            <sys_update_name>sys_choice_x_105558_sia_adapt_transaction_manager_entity</sys_update_name>
+            <sys_updated_by>ajvkumar</sys_updated_by>
+            <sys_updated_on>2019-12-27 12:22:04</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

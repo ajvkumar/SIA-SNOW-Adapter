@@ -1,8 +1,85 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element attributes="update_synch=true" extends="sys_metadata" label="Transaction Manager" max_length="40" name="x_105558_sia_adapt_transaction_manager" text_index="true" type="collection">
+        <element label="Assigned To" max_length="32" name="assigned_to" reference="sys_user" type="reference"/>
+        <element label="Assignment Group" max_length="32" name="assignment_group" reference="sys_user_group" type="reference"/>
         <element label="Description" max_length="4000" name="description" type="string"/>
+        <element choice="1" label="Direction" max_length="40" name="direction" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Inbound" sequence="0" value="Inbound"/>
+                <element inactive_on_update="false" label="Outbound" sequence="1" value="Outbound"/>
+            </choice>
+        </element>
+        <element choice="1" label="Entity" max_length="40" name="entity" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Change" sequence="0" value="Change"/>
+                <element inactive_on_update="false" label="Incident" sequence="1" value="Incident"/>
+                <element inactive_on_update="false" label="Problem" sequence="2" value="Problem"/>
+                <element inactive_on_update="false" label="ServiceRequest" sequence="3" value="ServiceRequest"/>
+            </choice>
+        </element>
+        <element choice="1" label="Impact" max_length="40" name="impact" type="string">
+            <choice>
+                <element inactive_on_update="false" label="1 - High" sequence="0" value="1"/>
+                <element inactive_on_update="false" label="2 - Medium" sequence="1" value="2"/>
+                <element inactive_on_update="false" label="3 - Low" sequence="2" value="3"/>
+            </choice>
+        </element>
         <element attributes="edge_encryption_enabled=true" label="NNITID" max_length="40" name="nnitid" type="string"/>
         <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element choice="1" label="Operation" max_length="40" name="operation" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Attachment" sequence="0" value="Attachment"/>
+                <element inactive_on_update="false" label="NewTicket" sequence="1" value="NewTicket"/>
+                <element inactive_on_update="false" label="TicketUpdate" sequence="2" value="TicketUpdate"/>
+                <element inactive_on_update="false" label="WorkNotes" sequence="3" value="WorkNotes"/>
+            </choice>
+        </element>
+        <element label="Payload" max_length="4000" name="payload" type="string"/>
+        <element choice="1" label="Priority" max_length="40" name="priority" type="string">
+            <choice>
+                <element inactive_on_update="false" label="1 - Critical" sequence="0" value="1"/>
+                <element inactive_on_update="false" label="2 - High" sequence="1" value="2"/>
+                <element inactive_on_update="false" label="3 - Moderate" sequence="2" value="3"/>
+                <element inactive_on_update="false" label="4 - Low" sequence="3" value="4"/>
+                <element inactive_on_update="false" label="5 - Planning" sequence="4" value="5"/>
+            </choice>
+        </element>
+        <element label="Response" max_length="4000" name="response" type="string"/>
+        <element label="Response Code" max_length="4000" name="response_code" type="string"/>
+        <element label="Service CI" max_length="32" name="service_ci" reference="cmdb_ci_service" type="reference"/>
         <element label="Short Description" max_length="169" name="short_description" type="string"/>
+        <element label="State" max_length="40" name="state" type="string"/>
+        <element label="Status Reason" max_length="100" name="status_reason" type="string"/>
+        <element label="Ticket Number" max_length="32" name="ticket_number" reference="task" type="reference"/>
+        <element choice="1" label="Transaction Status" max_length="40" name="transaction_status" type="string">
+            <choice>
+                <element inactive_on_update="false" label="New" sequence="0" value="New"/>
+                <element inactive_on_update="false" label="Ready" sequence="1" value="Ready"/>
+                <element inactive_on_update="false" label="In Progress" sequence="2" value="In Progress"/>
+                <element inactive_on_update="false" label="Processed" sequence="3" value="Processed"/>
+                <element inactive_on_update="false" label="Error" sequence="4" value="Error"/>
+                <element inactive_on_update="false" label="Skipped" sequence="5" value="Skipped"/>
+                <element inactive_on_update="false" label="Delete" sequence="6" value="Delete"/>
+            </choice>
+        </element>
+        <element choice="1" label="Urgency" max_length="40" name="urgency" type="string">
+            <choice>
+                <element inactive_on_update="false" label="1 - High" sequence="0" value="1"/>
+                <element inactive_on_update="false" label="2 - Medium" sequence="1" value="2"/>
+                <element inactive_on_update="false" label="3 - Low" sequence="2" value="3"/>
+            </choice>
+        </element>
+        <index name="index">
+            <element name="service_ci"/>
+        </index>
+        <index name="index2">
+            <element name="assignment_group"/>
+        </index>
+        <index name="index3">
+            <element name="ticket_number"/>
+        </index>
+        <index name="index4">
+            <element name="assigned_to"/>
+        </index>
     </element>
 </database>

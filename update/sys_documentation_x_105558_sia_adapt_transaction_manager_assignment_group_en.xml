@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="assignment_group" label="Assignment Group" language="en" table="x_105558_sia_adapt_transaction_manager">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>assignment_group</element>
+            <help/>
+            <hint/>
+            <label>Assignment Group</label>
+            <language>en</language>
+            <name>x_105558_sia_adapt_transaction_manager</name>
+            <plural>Assignment Groups</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>ajvkumar</sys_created_by>
+            <sys_created_on>2019-12-27 12:20:10</sys_created_on>
+            <sys_id>7d4b9cac1b020010d715ed3abc4bcb43</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Assignment Group</sys_name>
+            <sys_package display_value="SIA-Adapter" source="x_105558_sia_adapt">c1ff409b1b710010d715ed3abc4bcb47</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="SIA-Adapter">c1ff409b1b710010d715ed3abc4bcb47</sys_scope>
+            <sys_update_name>sys_documentation_x_105558_sia_adapt_transaction_manager_assignment_group_en</sys_update_name>
+            <sys_updated_by>ajvkumar</sys_updated_by>
+            <sys_updated_on>2019-12-27 12:20:10</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>
