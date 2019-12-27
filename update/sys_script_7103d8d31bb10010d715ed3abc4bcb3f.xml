@@ -28,14 +28,13 @@
         <rest_variables/>
         <role_conditions/>
         <script><![CDATA[//This business rules is going to push all the newly created incidents to the Transaction Manager table.
-gs.debug('Inside the BR-log 1');
+gs.debug('Entering the BR');
 (function executeRule(current, previous /*null when async*/) 
  {
-	gs.addInfoMessage('Inside the BR');
-	gs.info('Inside the BR-log');
-
+	
+	gs.debug('Entering the BR function.');
 	// Here is the code for inserting the details of the newly created incidents into the Transaction manager table.
-	var newTXNRecord = new GlideRecord('x_105558_sia_adapt_transactionmanager');      
+	var newTXNRecord = new GlideRecord('x_105558_sia_adapt_transaction_manager');      
 	
 	newTXNRecord.initialize();                                                                          // initialization of the object.
 	
@@ -50,7 +49,7 @@ gs.debug('Inside the BR-log 1');
 		newTXNRecord.setValue('description', current.description.getDisplayValue().trim());
 		newTXNRecord.setValue('state', current.state.getDisplayValue().trim());
 		newTXNRecord.setValue('status_reason', current.hold_reason.getDisplayValue().trim());
-		newTXNRecord.setValue('service', current.business_service.getDisplayValue().trim());
+		//newTXNRecord.setValue('service', current.business_service.getDisplayValue().trim());
 		newTXNRecord.setValue('service_ci', current.business_service);
 		newTXNRecord.setValue('impact', current.impact);
 		newTXNRecord.setValue('urgency', current.urgency);
@@ -86,6 +85,7 @@ gs.debug('Inside the BR-log 1');
 	
 		//Now, insert the values into the table.
 		newTXNRecord.insert();
+	
 })(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>
         <sys_created_by>ajvkumar</sys_created_by>
@@ -93,7 +93,7 @@ gs.debug('Inside the BR-log 1');
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>7103d8d31bb10010d715ed3abc4bcb3f</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name>NewIncident</sys_name>
         <sys_overrides/>
         <sys_package display_value="SIA-Adapter" source="x_105558_sia_adapt">c1ff409b1b710010d715ed3abc4bcb47</sys_package>
@@ -101,7 +101,7 @@ gs.debug('Inside the BR-log 1');
         <sys_scope display_value="SIA-Adapter">c1ff409b1b710010d715ed3abc4bcb47</sys_scope>
         <sys_update_name>sys_script_7103d8d31bb10010d715ed3abc4bcb3f</sys_update_name>
         <sys_updated_by>ajvkumar</sys_updated_by>
-        <sys_updated_on>2019-12-23 14:34:10</sys_updated_on>
+        <sys_updated_on>2019-12-27 13:28:13</sys_updated_on>
         <template/>
         <when>async</when>
     </sys_script>
