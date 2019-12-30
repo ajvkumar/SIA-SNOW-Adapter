@@ -15,7 +15,7 @@
         <condition/>
         <description/>
         <execute_function>false</execute_function>
-        <filter_condition table="incident">assignment_groupVALCHANGES^ORassigned_toVALCHANGES^ORstateVALCHANGES^ORhold_reasonVALCHANGES^ORshort_descriptionVALCHANGES^ORdescriptionVALCHANGES^ORimpactVALCHANGES^ORurgencyVALCHANGES^ORpriorityVALCHANGES^ORbusiness_serviceVALCHANGES^ORclose_codeVALCHANGES^ORclose_notesVALCHANGES^EQ<item endquery="false" field="assignment_group" goto="false" newquery="false" operator="VALCHANGES" or="false" value=""/>
+        <filter_condition table="incident">assignment_groupVALCHANGES^ORassigned_toVALCHANGES^ORstateVALCHANGES^ORhold_reasonVALCHANGES^ORshort_descriptionVALCHANGES^ORdescriptionVALCHANGES^ORimpactVALCHANGES^ORurgencyVALCHANGES^ORpriorityVALCHANGES^ORbusiness_serviceVALCHANGES^ORclose_codeVALCHANGES^ORclose_notesVALCHANGES^u_supplier_numberISNOTEMPTY^EQ<item endquery="false" field="assignment_group" goto="false" newquery="false" operator="VALCHANGES" or="false" value=""/>
             <item endquery="false" field="assigned_to" goto="false" newquery="false" operator="VALCHANGES" or="true" value=""/>
             <item endquery="false" field="state" goto="false" newquery="false" operator="VALCHANGES" or="true" value=""/>
             <item display_value="-- None --" endquery="false" field="hold_reason" goto="false" newquery="false" operator="VALCHANGES" or="true" value=""/>
@@ -27,6 +27,7 @@
             <item endquery="false" field="business_service" goto="false" newquery="false" operator="VALCHANGES" or="true" value=""/>
             <item display_value="-- None --" endquery="false" field="close_code" goto="false" newquery="false" operator="VALCHANGES" or="true" value=""/>
             <item endquery="false" field="close_notes" goto="false" newquery="false" operator="VALCHANGES" or="true" value=""/>
+            <item endquery="false" field="u_supplier_number" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </filter_condition>
         <is_rest>false</is_rest>
@@ -40,10 +41,96 @@
         <rest_service_text/>
         <rest_variables/>
         <role_conditions/>
-        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+        <script><![CDATA[//This business rules is going to push all the updates done in the integrated incidents to the Transaction Manager table.
 
-	// Add your code here
+(function executeRule(current, previous /*null when async*/) 
+ {
+	
 
+	// Here is the code for inserting the details of the updated incidents into the Transaction manager table.
+		var newTXNRecord = new GlideRecord('x_105558_sia_adapt_transaction_manager');      
+	
+		newTXNRecord.initialize();                                                                          // initialization of the object.
+	
+		//Insert the values that have updated from their previous values. Also add them to the JSON object.
+		var jsonPayload = {};
+	
+		newTXNRecord.setValue('entity','Incident');
+		newTXNRecord.setValue('operation','TicketUpdate');
+		newTXNRecord.setValue('direction', 'Outbound');
+		newTXNRecord.setValue('transaction_status', 'New');
+		newTXNRecord.setValue('ticket_number', current.sys_id);
+		jsonPayload.CorrelationID = current.number.getDisplayValue().toString();
+	
+	
+		newTXNRecord.setValue('nnitid', current.u_supplier_number.getDisplayValue());
+		jsonPayload.NNITID = current.u_supplier_number.getDisplayValue().toString().trim();
+	
+	
+		//update the short description only if it is changed. Also add it to the json paylod if it is changed.
+		if(current.short_description != previous.short_description)
+			{
+					newTXNRecord.setValue('short_description', current.short_description.getDisplayValue().trim());
+					jsonPayload.Summary = current.short_description.toString();
+			}
+			else
+				newTXNRecord.setValue('short_description', '');
+		
+		// update the description only if the description is changed from the previous value.
+		if(current.description != previous.description)
+			{
+				newTXNRecord.setValue('description', current.description.getDisplayValue().trim());
+				jsonPayload.Description = current.description.toString();
+			}
+			else
+				newTXNRecord.setValue('description', '');
+		
+		//update the state value if it has changed.
+		if(current.state != previous.state)
+			{
+					newTXNRecord.setValue('state', current.state.getDisplayValue().trim());
+			}
+			else
+				newTXNRecord.setValue('state', '');
+		
+		newTXNRecord.setValue('status_reason', current.hold_reason.getDisplayValue().trim());
+		//newTXNRecord.setValue('service', current.business_service.getDisplayValue().trim());
+		newTXNRecord.setValue('service_ci', current.business_service);
+		newTXNRecord.setValue('impact', current.impact);
+		newTXNRecord.setValue('urgency', current.urgency);
+		newTXNRecord.setValue('priority', current.priority);
+		newTXNRecord.setValue('assignment_group', current.assignment_group);
+		newTXNRecord.setValue('assigned_to', current.assigned_to);
+	
+		// Now prepare the Pay load to be sent to the destination ITSM tool.
+		
+		
+		jsonPayload.Requester = current.caller_id.getDisplayValue().toString();
+		jsonPayload.AssignmentGroup = current.assignment_group.getDisplayValue().toString();
+		jsonPayload.AssignmentGroupCorrelationID = current.assignment_group.toString();
+		jsonPayload.Service = current.business_service.getDisplayValue().toString();
+		jsonPayload.ServiceCorrelationID = current.business_service.toString();
+		
+		
+		jsonPayload.Source = current.contact_type.getDisplayValue().toString();
+		jsonPayload.Impact = current.impact.getDisplayValue().toString();
+		jsonPayload.Urgency = current.urgency.getDisplayValue().toString();
+		
+	
+		jsonPayload.StateReason = current.hold_reason.getDisplayValue().toString();
+		jsonPayload.GxPImpact = 'No'+"";
+		jsonPayload.Resolution = current.close_notes.getDisplayValue().toString();
+		
+		var jsonObject = new global.JSON();
+		var str = jsonObject.encode(jsonPayload);
+	
+		// the code for creating a JSON Payload ends here.
+	
+		newTXNRecord.setValue('payload', str.toString().trim());
+	
+		//Now, insert the values into the table.
+		newTXNRecord.insert();
+	
 })(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>
         <sys_created_by>ajvkumar</sys_created_by>
@@ -51,7 +138,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>8d19bf1d1b020010d715ed3abc4bcb56</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>UpdateIncident</sys_name>
         <sys_overrides/>
         <sys_package display_value="SIA-Adapter" source="x_105558_sia_adapt">c1ff409b1b710010d715ed3abc4bcb47</sys_package>
@@ -59,7 +146,7 @@
         <sys_scope display_value="SIA-Adapter">c1ff409b1b710010d715ed3abc4bcb47</sys_scope>
         <sys_update_name>sys_script_8d19bf1d1b020010d715ed3abc4bcb56</sys_update_name>
         <sys_updated_by>ajvkumar</sys_updated_by>
-        <sys_updated_on>2019-12-30 12:47:43</sys_updated_on>
+        <sys_updated_on>2019-12-30 13:28:36</sys_updated_on>
         <template/>
         <when>after</when>
     </sys_script>
