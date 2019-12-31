@@ -38,7 +38,7 @@
             <sys_mod_count>0</sys_mod_count>
             <sys_overrides/>
             <sys_ui_form display_value="x_105558_sia_adapt_transaction_manager" name="x_105558_sia_adapt_transaction_manager" sys_domain="global" view="Default view">f28298a41b020010d715ed3abc4bcb5a</sys_ui_form>
-            <sys_ui_section caption="Resolution Related" display_value="Resolution Related" name="x_105558_sia_adapt_transaction_manager" sys_domain="global" view="Default view">7e8258a41b020010d715ed3abc4bcbdc</sys_ui_section>
+            <sys_ui_section caption="Transaction Related" display_value="Transaction Related" name="x_105558_sia_adapt_transaction_manager" sys_domain="global" view="Default view">7e8258a41b020010d715ed3abc4bcbdc</sys_ui_section>
             <sys_updated_by>ajvkumar</sys_updated_by>
             <sys_updated_on>2019-12-27 11:42:02</sys_updated_on>
         </sys_ui_form_section>

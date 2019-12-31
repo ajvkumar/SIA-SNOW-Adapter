@@ -44,6 +44,7 @@
                 <element inactive_on_update="false" label="5 - Planning" sequence="4" value="5"/>
             </choice>
         </element>
+        <element label="Resolution" max_length="4000" name="resolution" type="string"/>
         <element label="Response" max_length="4000" name="response" type="string"/>
         <element label="Response Code" max_length="4000" name="response_code" type="string"/>
         <element label="Service CI" max_length="32" name="service_ci" reference="cmdb_ci_service" type="reference"/>

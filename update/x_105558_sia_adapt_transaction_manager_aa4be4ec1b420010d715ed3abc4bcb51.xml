@@ -11,6 +11,7 @@
         <operation>NewTicket</operation>
         <payload>{"AssignmentGroup":"ATF_TestGroup_Network","AssignmentGroupCorrelationID":"3cc3c7680b982300cac6c08393673a03","CorrelationID":"INC0010003","Description":"Test description.","GxPImpact":"No","Impact":"3 - Low","Requester":"Jitendra Alampalle","Resolution":"","Service":"Bond Trading","ServiceCorrelationID":"451047c6c0a8016400de0ae6df9b9d76","Source":"Phone","State":"In Progress","StateReason":"","Summary":"This is a test ticket.","Urgency":"3 - Low"}</payload>
         <priority>5</priority>
+        <resolution/>
         <response/>
         <response_code/>
         <service_ci display_value="Bond Trading">451047c6c0a8016400de0ae6df9b9d76</service_ci>

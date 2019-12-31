@@ -4,13 +4,13 @@
             <element>short_description</element>
             <position>0</position>
             <sys_created_by>ajvkumar</sys_created_by>
-            <sys_created_on>2019-12-27 11:42:02</sys_created_on>
-            <sys_id>cf8298a41b020010d715ed3abc4bcb79</sys_id>
+            <sys_created_on>2019-12-31 13:26:12</sys_created_on>
+            <sys_id>8cc099f91b020010d715ed3abc4bcb96</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Summary" display_value="Summary" name="x_105558_sia_adapt_transaction_manager" sys_domain="global" view="Default view">b68258a41b020010d715ed3abc4bcbdb</sys_ui_section>
             <sys_updated_by>ajvkumar</sys_updated_by>
-            <sys_updated_on>2019-12-27 11:42:02</sys_updated_on>
+            <sys_updated_on>2019-12-31 13:26:12</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -18,13 +18,27 @@
             <element>description</element>
             <position>1</position>
             <sys_created_by>ajvkumar</sys_created_by>
-            <sys_created_on>2019-12-27 11:42:02</sys_created_on>
-            <sys_id>438298a41b020010d715ed3abc4bcb7a</sys_id>
+            <sys_created_on>2019-12-31 13:26:12</sys_created_on>
+            <sys_id>00c099f91b020010d715ed3abc4bcb97</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Summary" display_value="Summary" name="x_105558_sia_adapt_transaction_manager" sys_domain="global" view="Default view">b68258a41b020010d715ed3abc4bcbdb</sys_ui_section>
             <sys_updated_by>ajvkumar</sys_updated_by>
-            <sys_updated_on>2019-12-27 11:42:02</sys_updated_on>
+            <sys_updated_on>2019-12-31 13:26:12</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>resolution</element>
+            <position>2</position>
+            <sys_created_by>ajvkumar</sys_created_by>
+            <sys_created_on>2019-12-31 13:26:12</sys_created_on>
+            <sys_id>80c099f91b020010d715ed3abc4bcb97</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Summary" display_value="Summary" name="x_105558_sia_adapt_transaction_manager" sys_domain="global" view="Default view">b68258a41b020010d715ed3abc4bcbdb</sys_ui_section>
+            <sys_updated_by>ajvkumar</sys_updated_by>
+            <sys_updated_on>2019-12-31 13:26:12</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

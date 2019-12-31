@@ -11,6 +11,7 @@
         <operation>TicketUpdate</operation>
         <payload>{"AssignmentGroup":"ATF_TestGroup_Network","AssignmentGroupCorrelationID":"3cc3c7680b982300cac6c08393673a03","CorrelationID":"INC0010004","GxPImpact":"No","Impact":"2 - Medium","NNITID":"","Requester":"Jitendra Alampalle","Resolution":"","Service":"Bond Trading - DR","ServiceCorrelationID":"63036c18c0a8010e01bac272daed2e2c","Source":"Phone","State":"In Progress","StateReason":"Awaiting Caller","Urgency":"2 - Medium"}</payload>
         <priority>3</priority>
+        <resolution/>
         <response/>
         <response_code/>
         <service_ci display_value="Bond Trading - DR">63036c18c0a8010e01bac272daed2e2c</service_ci>
