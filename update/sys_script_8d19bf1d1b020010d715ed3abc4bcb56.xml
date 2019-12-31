@@ -95,12 +95,44 @@
 		
 		newTXNRecord.setValue('status_reason', current.hold_reason.getDisplayValue().trim());
 		//newTXNRecord.setValue('service', current.business_service.getDisplayValue().trim());
-		newTXNRecord.setValue('service_ci', current.business_service);
-		newTXNRecord.setValue('impact', current.impact);
-		newTXNRecord.setValue('urgency', current.urgency);
+		
+		if(current.business_service.changes())
+			{
+				newTXNRecord.setValue('service_ci', current.business_service);
+			}
+			else
+				newTXNRecord.setValue('service_ci', '');
+		
+		if(current.impact.changes())
+			{
+				newTXNRecord.setValue('impact', current.impact);
+			}
+			else
+				newTXNRecord.setValue('impact', '');
+		
+		if(current.urgency.changes())
+			{
+				newTXNRecord.setValue('urgency', current.urgency);
+			}
+			else
+				newTXNRecord.setValue('urgency', '');
+	
+		
 		newTXNRecord.setValue('priority', current.priority);
-		newTXNRecord.setValue('assignment_group', current.assignment_group);
-		newTXNRecord.setValue('assigned_to', current.assigned_to);
+	
+		if(current.assignment_group.changes())
+			{
+				newTXNRecord.setValue('assignment_group', current.assignment_group);
+			}
+			else
+				newTXNRecord.setValue('assignment_group', '');
+		
+		if(current.assigned_to.changes())
+			{
+				newTXNRecord.setValue('assigned_to', current.assigned_to);
+			}
+			else
+				newTXNRecord.setValue('assigned_to', '');
 	
 		// Now prepare the Pay load to be sent to the destination ITSM tool.
 		
@@ -111,6 +143,7 @@
 		jsonPayload.Service = current.business_service.getDisplayValue().toString();
 		jsonPayload.ServiceCorrelationID = current.business_service.toString();
 		
+	
 		
 		jsonPayload.Source = current.contact_type.getDisplayValue().toString();
 		jsonPayload.Impact = current.impact.getDisplayValue().toString();
@@ -138,7 +171,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>8d19bf1d1b020010d715ed3abc4bcb56</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name>UpdateIncident</sys_name>
         <sys_overrides/>
         <sys_package display_value="SIA-Adapter" source="x_105558_sia_adapt">c1ff409b1b710010d715ed3abc4bcb47</sys_package>
@@ -146,7 +179,7 @@
         <sys_scope display_value="SIA-Adapter">c1ff409b1b710010d715ed3abc4bcb47</sys_scope>
         <sys_update_name>sys_script_8d19bf1d1b020010d715ed3abc4bcb56</sys_update_name>
         <sys_updated_by>ajvkumar</sys_updated_by>
-        <sys_updated_on>2019-12-30 13:28:36</sys_updated_on>
+        <sys_updated_on>2019-12-31 13:02:53</sys_updated_on>
         <template/>
         <when>after</when>
     </sys_script>
