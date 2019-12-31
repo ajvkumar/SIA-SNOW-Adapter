@@ -145,7 +145,12 @@
 		
 		jsonPayload.Requester = current.caller_id.getDisplayValue().toString();
 		
-		
+		if(current.close_notes.changes())
+			{
+				jsonPayload.Resolution = current.close_notes.getDisplayValue().toString();
+			}
+			
+				
 		
 	
 		
@@ -155,7 +160,7 @@
 	
 		jsonPayload.StateReason = current.hold_reason.getDisplayValue().toString();
 		jsonPayload.GxPImpact = 'No'+"";
-		jsonPayload.Resolution = current.close_notes.getDisplayValue().toString();
+		
 		
 		var jsonObject = new global.JSON();
 		var str = jsonObject.encode(jsonPayload);
@@ -174,7 +179,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>8d19bf1d1b020010d715ed3abc4bcb56</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_name>UpdateIncident</sys_name>
         <sys_overrides/>
         <sys_package display_value="SIA-Adapter" source="x_105558_sia_adapt">c1ff409b1b710010d715ed3abc4bcb47</sys_package>
@@ -182,7 +187,7 @@
         <sys_scope display_value="SIA-Adapter">c1ff409b1b710010d715ed3abc4bcb47</sys_scope>
         <sys_update_name>sys_script_8d19bf1d1b020010d715ed3abc4bcb56</sys_update_name>
         <sys_updated_by>ajvkumar</sys_updated_by>
-        <sys_updated_on>2019-12-31 13:05:56</sys_updated_on>
+        <sys_updated_on>2019-12-31 15:52:19</sys_updated_on>
         <template/>
         <when>after</when>
     </sys_script>
