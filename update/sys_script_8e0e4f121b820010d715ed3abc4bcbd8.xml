@@ -15,10 +15,10 @@
         <condition/>
         <description/>
         <execute_function>false</execute_function>
-        <filter_condition table="sys_attachment">table_name=incident^ORtable_name=sc_request^ORtable_name=problem^ORtable_name=change^EQ<item endquery="false" field="table_name" goto="false" newquery="false" operator="=" or="false" value="incident"/>
+        <filter_condition table="sys_attachment">table_name=incident^ORtable_name=sc_request^ORtable_name=problem^ORtable_name=change_request^EQ<item endquery="false" field="table_name" goto="false" newquery="false" operator="=" or="false" value="incident"/>
             <item endquery="false" field="table_name" goto="false" newquery="false" operator="=" or="true" value="sc_request"/>
             <item endquery="false" field="table_name" goto="false" newquery="false" operator="=" or="true" value="problem"/>
-            <item endquery="false" field="table_name" goto="false" newquery="false" operator="=" or="true" value="change"/>
+            <item endquery="false" field="table_name" goto="false" newquery="false" operator="=" or="true" value="change_request"/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </filter_condition>
         <is_rest>false</is_rest>
@@ -78,25 +78,25 @@
 							number = checkSupplierNumber.number;
 							supplierNumber = checkSupplierNumber.u_supplier_number;
 							
-							if(checkSupplierNumber.task_type == 'Incident')
+							if(checkSupplierNumber.sys_class_name == 'incident')
 							{
 								entity = 'incident';
 								ticketType = 'Incident';
 							}
 							
-							if(checkSupplierNumber.task_type == 'Request')
+							if(checkSupplierNumber.sys_class_name == 'sc_request')
 							{
 								entity = 'request';
 								ticketType = 'ServiceRequest';
 							}	
 							
-							if(checkSupplierNumber.task_type == 'Problem')
+							if(checkSupplierNumber.sys_class_name == 'problem')
 							{
 								entity = 'problem';
 								ticketType = 'Problem';
 							}
 							
-							if(checkSupplierNumber.task_type == 'Change Request')
+							if(checkSupplierNumber.sys_class_name == 'change_request')
 							{
 								entity = 'change';
 								ticketType = 'Change';
@@ -161,7 +161,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>8e0e4f121b820010d715ed3abc4bcbd8</sys_id>
-        <sys_mod_count>17</sys_mod_count>
+        <sys_mod_count>21</sys_mod_count>
         <sys_name>NewAttachment</sys_name>
         <sys_overrides/>
         <sys_package display_value="SIA-Adapter" source="x_105558_sia_adapt">c1ff409b1b710010d715ed3abc4bcb47</sys_package>
@@ -169,7 +169,7 @@
         <sys_scope display_value="SIA-Adapter">c1ff409b1b710010d715ed3abc4bcb47</sys_scope>
         <sys_update_name>sys_script_8e0e4f121b820010d715ed3abc4bcbd8</sys_update_name>
         <sys_updated_by>ajvkumar</sys_updated_by>
-        <sys_updated_on>2020-01-02 14:42:13</sys_updated_on>
+        <sys_updated_on>2020-01-02 15:03:48</sys_updated_on>
         <template/>
         <when>after</when>
     </sys_script>
