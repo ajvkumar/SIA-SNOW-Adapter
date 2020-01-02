@@ -15,7 +15,8 @@
         <condition/>
         <description/>
         <execute_function>false</execute_function>
-        <filter_condition table="incident">work_notesVALCHANGES^u_supplier_numberISNOTEMPTY^EQ<item endquery="false" field="work_notes" goto="false" newquery="false" operator="VALCHANGES" or="false" value=""/>
+        <filter_condition table="incident">work_notesVALCHANGES^ORcommentsVALCHANGES^u_supplier_numberISNOTEMPTY^EQ<item endquery="false" field="work_notes" goto="false" newquery="false" operator="VALCHANGES" or="false" value=""/>
+            <item endquery="false" field="comments" goto="false" newquery="false" operator="VALCHANGES" or="true" value=""/>
             <item endquery="false" field="u_supplier_number" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </filter_condition>
@@ -33,13 +34,55 @@
         <script><![CDATA[(function executeRule(current, previous /*null when async*/) 
  {
 
-	// Add your code here
-	if(current.work_notes.changes())
+	// The code to insert the work notes related data into the Transaction Manager table and also create the JSON Payload as well.
+	var newTXNRecord = new GlideRecord('x_105558_sia_adapt_transaction_manager');      
+	
+	newTXNRecord.initialize();                                                                          // initialization of the object.
+	
+		var jsonPayload = {};
+	//place the values of the incident into the respective fields of the Transaction Manager table.
+	
+		newTXNRecord.setValue('entity','Incident');
+		newTXNRecord.setValue('operation','WorkNotes');
+		newTXNRecord.setValue('direction', 'Outbound');
+		newTXNRecord.setValue('transaction_status', 'New');
+		newTXNRecord.setValue('ticket_number', current.sys_id);
+		
+		jsonPayload.CorrelationID = current.number.getDisplayValue().toString();
+	
+		newTXNRecord.setValue('nnitid', current.u_supplier_number);
+		jsonPayload.NNITID = current.u_supplier_number.getDisplayValue().toString().trim();
+	
+		jsonPayload.EntityType = 'incident'+"";
+	
+		jsonPayload.ViewAccess = 'internal'+"";
+		
+		if(current.comments.changes())
 		{
-			gs.addInfoMessage('Entering the Work notes BR.');
-			gs.debug('Entering the Work notes BR.');
+			newTXNRecord.setValue('description', current.comments.getJournalEntry(1) );
+			jsonPayload.Note = current.comments.getJournalEntry(1).toString();
+			jsonPayload.ViewAccess = 'external'+"";
 		}
-
+		if(current.work_notes.changes())
+			{
+					newTXNRecord.setValue('description', current.work_notes.getJournalEntry(1) );
+					jsonPayload.Note = current.work_notes.getJournalEntry(1).toString();
+					jsonPayload.ViewAccess = 'internal'+"";
+			}
+		
+						
+		var jsonObject = new global.JSON();
+		var str = jsonObject.encode(jsonPayload);
+	
+		// the code for creating a JSON Payload ends here.
+	
+		newTXNRecord.setValue('payload', str.toString().trim());
+	
+		//Now, insert the values into the table.
+		newTXNRecord.insert();
+	
+	
+	
 })(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>
         <sys_created_by>ajvkumar</sys_created_by>
@@ -47,7 +90,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>08a851791b020010d715ed3abc4bcbb0</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_name>IncidentWorkNotes</sys_name>
         <sys_overrides/>
         <sys_package display_value="SIA-Adapter" source="x_105558_sia_adapt">c1ff409b1b710010d715ed3abc4bcb47</sys_package>
@@ -55,7 +98,7 @@
         <sys_scope display_value="SIA-Adapter">c1ff409b1b710010d715ed3abc4bcb47</sys_scope>
         <sys_update_name>sys_script_08a851791b020010d715ed3abc4bcbb0</sys_update_name>
         <sys_updated_by>ajvkumar</sys_updated_by>
-        <sys_updated_on>2019-12-31 14:13:36</sys_updated_on>
+        <sys_updated_on>2020-01-02 11:06:30</sys_updated_on>
         <template/>
         <when>after</when>
     </sys_script>

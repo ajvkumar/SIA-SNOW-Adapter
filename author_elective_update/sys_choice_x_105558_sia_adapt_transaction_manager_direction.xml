@@ -1,58 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_choice action="INSERT_OR_UPDATE" field="direction" table="x_105558_sia_adapt_transaction_manager" version="3">
-        <sys_choice action="INSERT_OR_UPDATE">
-            <dependent_value/>
-            <element>direction</element>
-            <hint/>
-            <inactive>false</inactive>
-            <label>Inbound</label>
-            <language>en</language>
-            <name>x_105558_sia_adapt_transaction_manager</name>
-            <sequence>0</sequence>
-            <sys_created_by>ajvkumar</sys_created_by>
-            <sys_created_on>2019-12-27 12:15:37</sys_created_on>
-            <sys_domain>global</sys_domain>
-            <sys_domain_path>/</sys_domain_path>
-            <sys_id>4b3a1c281b020010d715ed3abc4bcb65</sys_id>
-            <sys_mod_count>3</sys_mod_count>
-            <sys_updated_by>ajvkumar</sys_updated_by>
-            <sys_updated_on>2019-12-27 12:16:16</sys_updated_on>
-            <value>Inbound</value>
-        </sys_choice>
-        <sys_choice action="INSERT_OR_UPDATE">
-            <dependent_value/>
-            <element>direction</element>
-            <hint/>
-            <inactive>false</inactive>
-            <label>Outbound</label>
-            <language>en</language>
-            <name>x_105558_sia_adapt_transaction_manager</name>
-            <sequence>1</sequence>
-            <sys_created_by>ajvkumar</sys_created_by>
-            <sys_created_on>2019-12-27 12:16:25</sys_created_on>
-            <sys_domain>global</sys_domain>
-            <sys_domain_path>/</sys_domain_path>
-            <sys_id>3b3a10281b020010d715ed3abc4bcb34</sys_id>
-            <sys_mod_count>2</sys_mod_count>
-            <sys_updated_by>ajvkumar</sys_updated_by>
-            <sys_updated_on>2019-12-27 12:16:35</sys_updated_on>
-            <value>Outbound</value>
-        </sys_choice>
-        <sys_choice_set action="INSERT_OR_UPDATE">
+    <sys_choice action="DELETE" field="direction" table="x_105558_sia_adapt_transaction_manager" version="3">
+        <sys_choice_set action="DELETE">
             <element>direction</element>
             <name>x_105558_sia_adapt_transaction_manager</name>
-            <sys_class_name>sys_choice_set</sys_class_name>
-            <sys_created_by>ajvkumar</sys_created_by>
-            <sys_created_on>2019-12-27 12:15:38</sys_created_on>
-            <sys_id>c33a1c281b020010d715ed3abc4bcb66</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_name>direction</sys_name>
-            <sys_package display_value="SIA-Adapter" source="x_105558_sia_adapt">c1ff409b1b710010d715ed3abc4bcb47</sys_package>
+            <sys_class_name/>
+            <sys_created_by/>
+            <sys_created_on/>
+            <sys_id/>
+            <sys_mod_count/>
+            <sys_name/>
+            <sys_package/>
             <sys_policy/>
-            <sys_scope display_value="SIA-Adapter">c1ff409b1b710010d715ed3abc4bcb47</sys_scope>
-            <sys_update_name>sys_choice_x_105558_sia_adapt_transaction_manager_direction</sys_update_name>
-            <sys_updated_by>ajvkumar</sys_updated_by>
-            <sys_updated_on>2019-12-27 12:15:38</sys_updated_on>
+            <sys_scope/>
+            <sys_update_name/>
+            <sys_updated_by/>
+            <sys_updated_on>2019-12-31 15:52:57</sys_updated_on>
         </sys_choice_set>
     </sys_choice>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application/>
+        <file_path/>
+        <instance_id>63b1c86bdb173b003050ac44d4961918</instance_id>
+        <instance_name>dev92064</instance_name>
+        <name>sys_choice_x_105558_sia_adapt_transaction_manager_direction</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_choice action="DELETE" field="direction" table="x_105558_sia_adapt_transaction_manager" version="3"><sys_choice_set action="DELETE"><element>direction</element><name>x_105558_sia_adapt_transaction_manager</name><sys_class_name/><sys_created_by/><sys_created_on/><sys_id/><sys_mod_count/><sys_name/><sys_package/><sys_policy/><sys_scope/><sys_update_name/><sys_updated_by/><sys_updated_on>2019-12-31 15:52:57</sys_updated_on></sys_choice_set></sys_choice></record_update>]]></payload>
+        <payload_hash>1573657980</payload_hash>
+        <record_name>x_105558_sia_adapt_transaction_manager.direction</record_name>
+        <reverted_from/>
+        <source>4cc25c931bb10010d715ed3abc4bcb07</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>ajvkumar</sys_created_by>
+        <sys_created_on>2019-12-31 15:52:57</sys_created_on>
+        <sys_id>7152b5791b820010d715ed3abc4bcbf0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>16f5ca903210000001</sys_recorded_at>
+        <sys_updated_by>ajvkumar</sys_updated_by>
+        <sys_updated_on>2019-12-31 15:52:57</sys_updated_on>
+        <type>Choice list</type>
+        <update_guid>f952b5791a82001040ae35b834c46cef</update_guid>
+        <update_guid_history>f952b5791a82001040ae35b834c46cef:1573657980,b952b5797282001090d92e73c7fe39ec:-610196048,997a182cc0020010d863ec215437da1a:1703632682,9b6adce412020010e376d162f15c1c93:-29065168,3a6a142c930200104545336ec1d42da6:-2072910071,6c6a5c2893020010ca188344d97985b4:550916225,6e5a106cd202001014a0cfe48f9a7200:1829370186,f05a9c6c5602001017263a682c06caab:2037702906,0f3a1c282302001097fd354ad4054067:-728456948</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>ajvkumar</sys_created_by>
+        <sys_created_on>2019-12-31 15:53:17</sys_created_on>
+        <sys_db_object display_value="" name="sys_choice_set">sys_choice_set</sys_db_object>
+        <sys_id>0d62f9791b820010d715ed3abc4bcb2c</sys_id>
+        <sys_metadata>0d62f9791b820010d715ed3abc4bcb2c</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>direction</sys_name>
+        <sys_package display_value="SIA-Adapter" source="x_105558_sia_adapt">c1ff409b1b710010d715ed3abc4bcb47</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="SIA-Adapter">c1ff409b1b710010d715ed3abc4bcb47</sys_scope>
+        <sys_scope_delete display_value="">13dc5b87f143446e981b22a244162cc1</sys_scope_delete>
+        <sys_update_name>sys_choice_x_105558_sia_adapt_transaction_manager_direction</sys_update_name>
+        <sys_update_version display_value="sys_choice_x_105558_sia_adapt_transaction_manager_direction">7152b5791b820010d715ed3abc4bcbf0</sys_update_version>
+        <sys_updated_by>ajvkumar</sys_updated_by>
+        <sys_updated_on>2019-12-31 15:53:17</sys_updated_on>
+    </sys_metadata_delete>
 </record_update>
