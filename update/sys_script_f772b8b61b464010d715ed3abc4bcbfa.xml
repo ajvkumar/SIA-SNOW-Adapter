@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>false</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_105558_sia_adapt_transaction_manager</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition table="x_105558_sia_adapt_transaction_manager">direction=Outbound^EQ<item display_value="Outbound" endquery="false" field="direction" goto="false" newquery="false" operator="=" or="false" value="Outbound"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>ExecuteOutbound</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+
+	// This is the code for calling the createIncident REST web services of SIA API.
+	if(current.operation == 'NewTicket' && current.direction == 'Outbound' && current.entity == 'Incident')
+		{
+			//create the rest message object to call the SIA API.
+			try
+				{
+					//code for executing the REST method for creating a new ticket.
+					var request  = new sn_ws.RESTMessageV2();   
+					request.setHttpMethod('post');
+					request.setEndpoint('https://itsmintegration-test.nnit.com/ws/rest/itsm/v1.0/incident');
+					request.setAuthenticationProfile('basic','SIA-User');
+					
+					request.setRequestBody(current.payload.toString().trim());
+					
+					var response = request.execute();
+					
+					//code for catching the response and updating both the incident
+					
+					
+					
+					
+					
+				}
+				catch(ex)
+					{
+						gs.print(ex.getMessage());  
+					}
+			
+		}
+
+
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>ajvkumar</sys_created_by>
+        <sys_created_on>2020-01-03 13:52:54</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f772b8b61b464010d715ed3abc4bcbfa</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>ExecuteOutbound</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="SIA-Adapter" source="x_105558_sia_adapt">c1ff409b1b710010d715ed3abc4bcb47</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SIA-Adapter">c1ff409b1b710010d715ed3abc4bcb47</sys_scope>
+        <sys_update_name>sys_script_f772b8b61b464010d715ed3abc4bcbfa</sys_update_name>
+        <sys_updated_by>ajvkumar</sys_updated_by>
+        <sys_updated_on>2020-01-03 15:06:18</sys_updated_on>
+        <template/>
+        <when>async</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=f772b8b61b464010d715ed3abc4bcbfa"/>
+</record_update>
