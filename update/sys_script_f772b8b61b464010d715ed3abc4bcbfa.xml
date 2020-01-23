@@ -53,7 +53,8 @@
 					else 
 						request.setEndpoint('https://itsmintegration-test.nnit.com/ws/rest/itsm/v1.0/incident');
 					
-					request.setAuthenticationProfile('basic','SIA-User');
+					request.setAuthenticationProfile('basic','NLYS-ACC');
+					request.setMIDServer('SIA-Testing-MidServer');
 					
 					request.setRequestBody(current.payload.toString().trim());
 					
@@ -147,7 +148,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>f772b8b61b464010d715ed3abc4bcbfa</sys_id>
-        <sys_mod_count>12</sys_mod_count>
+        <sys_mod_count>13</sys_mod_count>
         <sys_name>ExecuteOutbound</sys_name>
         <sys_overrides/>
         <sys_package display_value="SIA-Adapter" source="x_105558_sia_adapt">c1ff409b1b710010d715ed3abc4bcb47</sys_package>
@@ -155,7 +156,7 @@
         <sys_scope display_value="SIA-Adapter">c1ff409b1b710010d715ed3abc4bcb47</sys_scope>
         <sys_update_name>sys_script_f772b8b61b464010d715ed3abc4bcbfa</sys_update_name>
         <sys_updated_by>ajvkumar</sys_updated_by>
-        <sys_updated_on>2020-01-21 12:47:59</sys_updated_on>
+        <sys_updated_on>2020-01-23 13:08:35</sys_updated_on>
         <template/>
         <when>async</when>
     </sys_script>
