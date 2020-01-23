@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn">
+    <sys_rest_message_fn action="INSERT_OR_UPDATE">
+        <authentication_type>inherit_from_parent</authentication_type>
+        <basic_auth_password/>
+        <basic_auth_profile/>
+        <basic_auth_user/>
+        <content/>
+        <function_name>Create Ticket</function_name>
+        <http_method>post</http_method>
+        <lock>false</lock>
+        <oauth2_profile/>
+        <protocol_name/>
+        <qualified_name>Test Ping SIA [ Create Ticket ]</qualified_name>
+        <rest_endpoint>https://itsmintegration-test.nnit.com/ws/rest/itsm/v1.0/incident</rest_endpoint>
+        <rest_message display_value="Test Ping SIA">2924692c1b620010d715ed3abc4bcb38</rest_message>
+        <sys_class_name>sys_rest_message_fn</sys_class_name>
+        <sys_created_by>ajvkumar</sys_created_by>
+        <sys_created_on>2020-01-21 14:12:36</sys_created_on>
+        <sys_id>a4b4ed2c1b620010d715ed3abc4bcbff</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Create Ticket</sys_name>
+        <sys_package display_value="SIA-Adapter" source="x_105558_sia_adapt">c1ff409b1b710010d715ed3abc4bcb47</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SIA-Adapter">c1ff409b1b710010d715ed3abc4bcb47</sys_scope>
+        <sys_update_name>sys_rest_message_fn_a4b4ed2c1b620010d715ed3abc4bcbff</sys_update_name>
+        <sys_updated_by>ajvkumar</sys_updated_by>
+        <sys_updated_on>2020-01-23 13:03:32</sys_updated_on>
+        <use_basic_auth>false</use_basic_auth>
+        <use_mid_server display_value="SIA-Testing-MidServer">ecf627451b220010d715ed3abc4bcb3e</use_mid_server>
+        <use_mutual_auth>false</use_mutual_auth>
+    </sys_rest_message_fn>
+</record_update>
