@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="x_105558_sia_adapt_transaction_manager">
+    <x_105558_sia_adapt_transaction_manager action="DELETE">
+        <assigned_to/>
+        <assignment_group/>
+        <content_type/>
+        <description>2020-01-03 00:54:16 - Jitendra Alampalle (Additional comments)
+Additional note.
+
+</description>
+        <direction>Outbound</direction>
+        <entity>Incident</entity>
+        <file_name/>
+        <impact/>
+        <nnitid>ITINC1234689</nnitid>
+        <number>TXN000000000000016</number>
+        <operation>WorkNotes</operation>
+        <payload>{"CorrelationID":"INC0010004","EntityType":"incident","NNITID":"ITINC1234689","Note":"2020-01-03 00:54:16 - Jitendra Alampalle (Additional comments)\nAdditional note.\n\n","ViewAccess":"external"}</payload>
+        <priority/>
+        <resolution/>
+        <response/>
+        <response_code/>
+        <service_ci/>
+        <short_description/>
+        <size_bytes/>
+        <state/>
+        <status_reason/>
+        <sys_class_name>x_105558_sia_adapt_transaction_manager</sys_class_name>
+        <sys_created_by>ajvkumar</sys_created_by>
+        <sys_created_on>2020-01-03 08:54:16</sys_created_on>
+        <sys_id>f54fab6e1b424010d715ed3abc4bcb03</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SIA-Adapter" source="x_105558_sia_adapt">c1ff409b1b710010d715ed3abc4bcb47</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SIA-Adapter">c1ff409b1b710010d715ed3abc4bcb47</sys_scope>
+        <sys_update_name>x_105558_sia_adapt_transaction_manager_f54fab6e1b424010d715ed3abc4bcb03</sys_update_name>
+        <sys_updated_by>ajvkumar</sys_updated_by>
+        <sys_updated_on>2020-01-03 08:54:16</sys_updated_on>
+        <ticket_number display_value="INC0010004">a59f74201bc20010d715ed3abc4bcb9d</ticket_number>
+        <transaction_status>New</transaction_status>
+        <urgency/>
+    </x_105558_sia_adapt_transaction_manager>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="SIA-Adapter">c1ff409b1b710010d715ed3abc4bcb47</application>
+        <file_path/>
+        <instance_id>63b1c86bdb173b003050ac44d4961918</instance_id>
+        <instance_name>dev92064</instance_name>
+        <name>x_105558_sia_adapt_transaction_manager_f54fab6e1b424010d715ed3abc4bcb03</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_105558_sia_adapt_transaction_manager"><x_105558_sia_adapt_transaction_manager action="INSERT_OR_UPDATE"><assigned_to/><assignment_group/><content_type/><description>2020-01-03 00:54:16 - Jitendra Alampalle (Additional comments)
+Additional note.
+
+</description><direction>Outbound</direction><entity>Incident</entity><file_name/><impact/><nnitid>ITINC1234689</nnitid><number>TXN000000000000016</number><operation>WorkNotes</operation><payload>{"CorrelationID":"INC0010004","EntityType":"incident","NNITID":"ITINC1234689","Note":"2020-01-03 00:54:16 - Jitendra Alampalle (Additional comments)\nAdditional note.\n\n","ViewAccess":"external"}</payload><priority/><resolution/><response/><response_code/><service_ci/><short_description/><size_bytes/><state/><status_reason/><sys_class_name>x_105558_sia_adapt_transaction_manager</sys_class_name><sys_created_by>ajvkumar</sys_created_by><sys_created_on>2020-01-03 08:54:16</sys_created_on><sys_id>f54fab6e1b424010d715ed3abc4bcb03</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package display_value="SIA-Adapter" source="x_105558_sia_adapt">c1ff409b1b710010d715ed3abc4bcb47</sys_package><sys_policy/><sys_scope display_value="SIA-Adapter">c1ff409b1b710010d715ed3abc4bcb47</sys_scope><sys_update_name>x_105558_sia_adapt_transaction_manager_f54fab6e1b424010d715ed3abc4bcb03</sys_update_name><sys_updated_by>ajvkumar</sys_updated_by><sys_updated_on>2020-01-03 08:54:16</sys_updated_on><ticket_number display_value="INC0010004">a59f74201bc20010d715ed3abc4bcb9d</ticket_number><transaction_status>New</transaction_status><urgency/></x_105558_sia_adapt_transaction_manager></record_update>]]></payload>
+        <payload_hash>-1678972979</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>777271b91b820010d715ed3abc4bcb6c</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>ajvkumar</sys_created_by>
+        <sys_created_on>2020-01-03 08:54:17</sys_created_on>
+        <sys_id>b14fab6e1b424010d715ed3abc4bcb05</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>16f6a9cc6aa0000001</sys_recorded_at>
+        <sys_updated_by>ajvkumar</sys_updated_by>
+        <sys_updated_on>2020-01-03 08:54:17</sys_updated_on>
+        <type>Transaction Manager</type>
+        <update_guid>f94fab6e604240108e9782d302f55604</update_guid>
+        <update_guid_history>f94fab6e604240108e9782d302f55604:-1678972979</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">18d218dd1ba20010d715ed3abc4bcbc8</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>ajvkumar</sys_created_by>
+        <sys_created_on>2020-01-23 16:10:02</sys_created_on>
+        <sys_db_object display_value="" name="x_105558_sia_adapt_transaction_manager">x_105558_sia_adapt_transaction_manager</sys_db_object>
+        <sys_id>1daf6a13abda4d3d89dfc8dd796006c1</sys_id>
+        <sys_metadata>f54fab6e1b424010d715ed3abc4bcb03</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SIA-Adapter" source="x_105558_sia_adapt">c1ff409b1b710010d715ed3abc4bcb47</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="SIA-Adapter">c1ff409b1b710010d715ed3abc4bcb47</sys_scope>
+        <sys_scope_delete display_value="">13dc5b87f143446e981b22a244162cc1</sys_scope_delete>
+        <sys_update_name>x_105558_sia_adapt_transaction_manager_f54fab6e1b424010d715ed3abc4bcb03</sys_update_name>
+        <sys_update_version display_value="x_105558_sia_adapt_transaction_manager_f54fab6e1b424010d715ed3abc4bcb03">b14fab6e1b424010d715ed3abc4bcb05</sys_update_version>
+        <sys_updated_by>ajvkumar</sys_updated_by>
+        <sys_updated_on>2020-01-23 16:10:02</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

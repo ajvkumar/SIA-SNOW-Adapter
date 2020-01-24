@@ -61,18 +61,76 @@ gs.debug('Entering the BR');
 		var jsonPayload = {};
 		jsonPayload.CorrelationID = current.number.getDisplayValue().toString();
 		jsonPayload.Requester = current.caller_id.getDisplayValue().toString();
-		jsonPayload.AssignmentGroup = current.assignment_group.getDisplayValue().toString();
-		jsonPayload.AssignmentGroupCorrelationID = current.assignment_group.toString();
+		//jsonPayload.AssignmentGroup = current.assignment_group.getDisplayValue().toString();
+		//jsonPayload.AssignmentGroupCorrelationID = current.assignment_group.toString();
 		jsonPayload.Service = current.business_service.getDisplayValue().toString();
-		jsonPayload.ServiceCorrelationID = current.business_service.toString();
+		//jsonPayload.ServiceCorrelationID = current.business_service.toString();
 		jsonPayload.Summary = current.short_description.toString();
 		jsonPayload.Description = current.description.toString();
 		jsonPayload.Source = current.contact_type.getDisplayValue().toString();
-		jsonPayload.Impact = current.impact.getDisplayValue().toString();
-		jsonPayload.Urgency = current.urgency.getDisplayValue().toString();
-		jsonPayload.State = current.state.getDisplayValue().toString();
+		
+		//map the impact to SIA values
+		if(current.impact == 1)
+			jsonPayload.Impact = "High"+"";
+		
+		if(current.impact == 2)
+			jsonPayload.Impact = "Medium"+"";
 	
-		jsonPayload.StateReason = current.hold_reason.getDisplayValue().toString();
+		if(current.impact == 3)
+			jsonPayload.Impact = "Low"+"";
+	
+	
+		//map the urgency to SIA values
+		if(current.urgency == 1)
+			jsonPayload.Urgency = "High"+"";
+		
+		if(current.urgency == 2)
+			jsonPayload.Urgency = "Medium"+"";
+	
+		if(current.urgency == 3)
+			jsonPayload.Urgency = "Low"+"";
+	
+	
+		//set the state to SIA values
+		if(current.state.getDisplayValue() == 'New')
+			jsonPayload.State = "Open"+"";
+		
+		if(current.state.getDisplayValue() == 'In Progress')
+			jsonPayload.State = "In Progress"+"";
+		
+		if(current.state.getDisplayValue() == 'Resolved')
+			jsonPayload.State = "Resolved"+"";
+		
+		if(current.state.getDisplayValue() == 'Closed')
+			jsonPayload.State = "Closed"+"";
+	
+		if(current.state.getDisplayValue() == 'On Hold')
+			{
+				if(current.hold_reason.getDisplayValue() == 'Awaiting Caller')
+					{
+						jsonPayload.State = "Pending"+"";
+						jsonPayload.StateReason = "User Hold"+"";
+					}
+				
+				if(current.hold_reason.getDisplayValue() == 'Awaiting Vendor')
+					{
+						jsonPayload.State = "Pending"+"";
+						jsonPayload.StateReason = "Vendor"+"";
+					}
+				if(current.hold_reason.getDisplayValue() == 'Awaiting Change')
+					{
+						jsonPayload.State = "Pending"+"";
+						jsonPayload.StateReason = "Change"+"";
+					}
+			}
+	
+		if(current.state.getDisplayValue() == 'Canceled')
+			{
+				jsonPayload.State = "Closed"+"";
+				jsonPayload.StateReason = "Cancelled"+"";
+			}
+			
+		
 		jsonPayload.GxPImpact = 'No'+"";
 		jsonPayload.Resolution = current.close_notes.getDisplayValue().toString();
 		
@@ -93,7 +151,7 @@ gs.debug('Entering the BR');
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>7103d8d31bb10010d715ed3abc4bcb3f</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_name>NewIncident</sys_name>
         <sys_overrides/>
         <sys_package display_value="SIA-Adapter" source="x_105558_sia_adapt">c1ff409b1b710010d715ed3abc4bcb47</sys_package>
@@ -101,7 +159,7 @@ gs.debug('Entering the BR');
         <sys_scope display_value="SIA-Adapter">c1ff409b1b710010d715ed3abc4bcb47</sys_scope>
         <sys_update_name>sys_script_7103d8d31bb10010d715ed3abc4bcb3f</sys_update_name>
         <sys_updated_by>ajvkumar</sys_updated_by>
-        <sys_updated_on>2019-12-27 13:28:13</sys_updated_on>
+        <sys_updated_on>2020-01-24 21:12:21</sys_updated_on>
         <template/>
         <when>async</when>
     </sys_script>
