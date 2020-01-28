@@ -4,7 +4,7 @@
         <basic_auth_password/>
         <basic_auth_profile display_value="Hempel">ce9dcc591ba20010d715ed3abc4bcb53</basic_auth_profile>
         <basic_auth_user/>
-        <content>{"CorrelationID":"INC0010005","Description":"This is a test ticket from SIA Adapter. - Description.","GxPImpact":"No",Requester":"Jitendra Alampalle","Resolution":"","Service":"Blackberry","Source":"Phone","State":"In Progress","StateReason":"","Summary":"This is a test ticket from SIA Adapter."}</content>
+        <content>{"CorrelationID":"INC0010022","Description":"kjdsfkjagflkafjlkcjælkH JFHSKJGHKJGHFSS","GxPImpact":"No","Impact":"Low","Requester":"Jitendra Alampalle","Resolution":"","Service":"Blackberry","Source":"Phone","State":"Open","Summary":"test ticket","Urgency":"Low"}</content>
         <function_name>Create Ticket</function_name>
         <http_method>post</http_method>
         <lock>false</lock>
@@ -17,14 +17,14 @@
         <sys_created_by>ajvkumar</sys_created_by>
         <sys_created_on>2020-01-21 14:12:36</sys_created_on>
         <sys_id>a4b4ed2c1b620010d715ed3abc4bcbff</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_name>Create Ticket</sys_name>
         <sys_package display_value="SIA-Adapter" source="x_105558_sia_adapt">c1ff409b1b710010d715ed3abc4bcb47</sys_package>
         <sys_policy/>
         <sys_scope display_value="SIA-Adapter">c1ff409b1b710010d715ed3abc4bcb47</sys_scope>
         <sys_update_name>sys_rest_message_fn_a4b4ed2c1b620010d715ed3abc4bcbff</sys_update_name>
         <sys_updated_by>ajvkumar</sys_updated_by>
-        <sys_updated_on>2020-01-23 16:06:44</sys_updated_on>
+        <sys_updated_on>2020-01-28 13:56:38</sys_updated_on>
         <use_basic_auth>false</use_basic_auth>
         <use_mid_server display_value="SIA-Testing-MidServer">ecf627451b220010d715ed3abc4bcb3e</use_mid_server>
         <use_mutual_auth>false</use_mutual_auth>
