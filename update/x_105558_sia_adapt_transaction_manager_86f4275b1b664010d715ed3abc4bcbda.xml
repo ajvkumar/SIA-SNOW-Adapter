@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="x_105558_sia_adapt_transaction_manager">
+    <x_105558_sia_adapt_transaction_manager action="INSERT_OR_UPDATE">
+        <assigned_to/>
+        <assignment_group/>
+        <content_type/>
+        <description/>
+        <direction>Outbound</direction>
+        <entity>Change</entity>
+        <file_name/>
+        <impact/>
+        <nnitid>ITCHG000123456</nnitid>
+        <number>TXN000000000000048</number>
+        <operation>WorkNotes</operation>
+        <payload>{"CorrelationID":"CHG0040007","EntityType":"change","NNITID":"ITCHG000123456","Note":"2020-01-30 12:36:03 - Jitendra Alampalle()Change Request has been approved by Emergency Change Policy (CAB Approval)."}</payload>
+        <priority/>
+        <resolution/>
+        <response/>
+        <response_code/>
+        <service_ci/>
+        <short_description/>
+        <size_bytes/>
+        <state/>
+        <status_reason/>
+        <sys_class_name>x_105558_sia_adapt_transaction_manager</sys_class_name>
+        <sys_created_by>ajvkumar</sys_created_by>
+        <sys_created_on>2020-01-30 12:36:03</sys_created_on>
+        <sys_id>86f4275b1b664010d715ed3abc4bcbda</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SIA-Adapter" source="x_105558_sia_adapt">c1ff409b1b710010d715ed3abc4bcb47</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SIA-Adapter">c1ff409b1b710010d715ed3abc4bcb47</sys_scope>
+        <sys_update_name>x_105558_sia_adapt_transaction_manager_86f4275b1b664010d715ed3abc4bcbda</sys_update_name>
+        <sys_updated_by>ajvkumar</sys_updated_by>
+        <sys_updated_on>2020-01-30 12:36:03</sys_updated_on>
+        <ticket_number display_value="CHG0040007">c83c5e5347c12200e0ef563dbb9a7190</ticket_number>
+        <transaction_status>New</transaction_status>
+        <urgency/>
+    </x_105558_sia_adapt_transaction_manager>
+</record_update>
