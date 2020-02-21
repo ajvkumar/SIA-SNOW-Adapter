@@ -2,6 +2,7 @@
     <x_105558_sia_adapt_transaction_manager action="INSERT_OR_UPDATE">
         <assigned_to/>
         <assignment_group display_value="ATF_TestGroup_Network" name="ATF_TestGroup_Network">3cc3c7680b982300cac6c08393673a03</assignment_group>
+        <caller_requested_for/>
         <content_type/>
         <description>This is a test ticket.fjhfjghfkfjhgkhg</description>
         <direction>Outbound</direction>

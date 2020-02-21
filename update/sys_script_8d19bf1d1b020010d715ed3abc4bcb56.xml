@@ -60,6 +60,7 @@
 		newTXNRecord.setValue('direction', 'Outbound');
 		newTXNRecord.setValue('transaction_status', 'New');
 		newTXNRecord.setValue('ticket_number', current.sys_id);
+	
 		jsonPayload.CorrelationID = current.number.getDisplayValue().toString();
 	
 	
@@ -86,14 +87,54 @@
 				newTXNRecord.setValue('description', '');
 		
 		//update the state value if it has changed.
-		if(current.state != previous.state)
+		if(current.state != previous.state || current.hold_reason != previous.hold_reason)
 			{
 					newTXNRecord.setValue('state', current.state.getDisplayValue().trim());
+					newTXNRecord.setValue('status_reason', current.hold_reason.getDisplayValue().trim());
+				
+					if(current.state.getDisplayValue() == 'New')
+					jsonPayload.State = "Open"+"";
+		
+				if(current.state.getDisplayValue() == 'In Progress')
+					jsonPayload.State = "In Progress"+"";
+
+				if(current.state.getDisplayValue() == 'Resolved')
+					jsonPayload.State = "Resolved"+"";
+
+				if(current.state.getDisplayValue() == 'Closed')
+					jsonPayload.State = "Closed"+"";
+
+				if(current.state.getDisplayValue() == 'On Hold')
+					{
+						if(current.hold_reason.getDisplayValue() == 'Awaiting Caller')
+							{
+								jsonPayload.State = "Pending"+"";
+								jsonPayload.StateReason = "User Hold"+"";
+							}
+
+						if(current.hold_reason.getDisplayValue() == 'Awaiting Vendor')
+							{
+								jsonPayload.State = "Pending"+"";
+								jsonPayload.StateReason = "Vendor"+"";
+							}
+						if(current.hold_reason.getDisplayValue() == 'Awaiting Change')
+							{
+								jsonPayload.State = "Pending"+"";
+								jsonPayload.StateReason = "Change"+"";
+							}
+						}
+
+					if(current.state.getDisplayValue() == 'Canceled')
+						{
+							jsonPayload.State = "Closed"+"";
+							jsonPayload.StateReason = "Cancelled"+"";
+						}
+			
 			}
 			else
 				newTXNRecord.setValue('state', '');
 		
-		newTXNRecord.setValue('status_reason', current.hold_reason.getDisplayValue().trim());
+		
 		//newTXNRecord.setValue('service', current.business_service.getDisplayValue().trim());
 		
 		if(current.business_service.changes())
@@ -108,7 +149,16 @@
 		if(current.impact.changes())
 			{
 				newTXNRecord.setValue('impact', current.impact);
-				jsonPayload.Impact = current.impact.getDisplayValue().toString();
+				
+				if(current.impact == 1)
+					jsonPayload.Impact = "High"+"";
+		
+				if(current.impact == 2)
+					jsonPayload.Impact = "Medium"+"";
+	
+				if(current.impact == 3)
+					jsonPayload.Impact = "Low"+"";
+						
 			}
 			else
 				newTXNRecord.setValue('impact', '');
@@ -116,13 +166,20 @@
 		if(current.urgency.changes())
 			{
 				newTXNRecord.setValue('urgency', current.urgency);
-				jsonPayload.Urgency = current.urgency.getDisplayValue().toString();
+				if(current.urgency == 1)
+					jsonPayload.Urgency = "High"+"";
+				
+				if(current.urgency == 2)
+					jsonPayload.Urgency = "Medium"+"";
+			
+				if(current.urgency == 3)
+					jsonPayload.Urgency = "Low"+"";
 			}
 			else
 				newTXNRecord.setValue('urgency', '');
 	
 		
-		newTXNRecord.setValue('priority', current.priority);
+		//newTXNRecord.setValue('priority', current.priority);
 	
 		if(current.assignment_group.changes())
 			{
@@ -142,11 +199,13 @@
 	
 		// Now prepare the Pay load to be sent to the destination ITSM tool.
 		
+		if(current.caller_id.changes())
+			jsonPayload.Requester = current.caller_id.user_name.getDisplayValue().toString();
 		
-		jsonPayload.Requester = current.caller_id.getDisplayValue().toString();
 		
 		if(current.close_notes.changes())
 			{
+				newTXNRecord.setValue('resolution', current.close_notes.getDisplayValue().toString());
 				jsonPayload.Resolution = current.close_notes.getDisplayValue().toString();
 			}
 			
@@ -156,9 +215,6 @@
 		
 		jsonPayload.Source = current.contact_type.getDisplayValue().toString();
 		
-		
-	
-		jsonPayload.StateReason = current.hold_reason.getDisplayValue().toString();
 		jsonPayload.GxPImpact = 'No'+"";
 		
 		
@@ -179,7 +235,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>8d19bf1d1b020010d715ed3abc4bcb56</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_name>UpdateIncident</sys_name>
         <sys_overrides/>
         <sys_package display_value="SIA-Adapter" source="x_105558_sia_adapt">c1ff409b1b710010d715ed3abc4bcb47</sys_package>
@@ -187,7 +243,7 @@
         <sys_scope display_value="SIA-Adapter">c1ff409b1b710010d715ed3abc4bcb47</sys_scope>
         <sys_update_name>sys_script_8d19bf1d1b020010d715ed3abc4bcb56</sys_update_name>
         <sys_updated_by>ajvkumar</sys_updated_by>
-        <sys_updated_on>2019-12-31 15:52:19</sys_updated_on>
+        <sys_updated_on>2020-02-18 15:03:27</sys_updated_on>
         <template/>
         <when>after</when>
     </sys_script>
