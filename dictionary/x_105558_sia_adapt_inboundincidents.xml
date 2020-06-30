@@ -1,3 +1,3 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element extends="sys_import_set_row" label="InboundIncidents" max_length="40" name="x_105558_sia_adapt_inboundincidents" type="collection"/>
+    <element extends="sys_import_set_row" label="InboundIncidents" max_length="40" name="x_105558_sia_adapt_inboundincidents" sizeclass="0" type="collection"/>
 </database>

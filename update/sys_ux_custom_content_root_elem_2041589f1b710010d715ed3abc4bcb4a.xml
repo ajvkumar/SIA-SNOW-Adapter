@@ -5,9 +5,11 @@
         <applicable_page display_value="SIA-Adapter">7331545f1b710010d715ed3abc4bcb59</applicable_page>
         <attrs/>
         <children/>
-        <component display_value="sn-workspace-toolbar-button">f31b580e0f203300bb57f4a1ff767e9d</component>
+        <component display_value="sn-workspace-toolbar-button">c599f5f3b6554fd79cd983bf4ea75968</component>
         <is_root>true</is_root>
         <layout/>
+        <macroponent/>
+        <macroponent_config/>
         <name>Inbox Button</name>
         <order>200</order>
         <page display_value="Workspace Core">b70867ad0f603300bb57f4a1ff767e15</page>
@@ -22,58 +24,58 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>2041589f1b710010d715ed3abc4bcb4a</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>Inbox Button</sys_name>
         <sys_overrides/>
         <sys_package display_value="SIA-Adapter" source="x_105558_sia_adapt">c1ff409b1b710010d715ed3abc4bcb47</sys_package>
         <sys_policy/>
         <sys_scope display_value="SIA-Adapter">c1ff409b1b710010d715ed3abc4bcb47</sys_scope>
         <sys_update_name>sys_ux_custom_content_root_elem_2041589f1b710010d715ed3abc4bcb4a</sys_update_name>
-        <sys_updated_by>ajvkumar</sys_updated_by>
-        <sys_updated_on>2019-12-23 14:23:59</sys_updated_on>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2020-04-23 14:27:55</sys_updated_on>
         <tree_root/>
     </sys_ux_custom_content_root_elem>
     <sys_variable_value action="delete_multiple" query="document_key=2041589f1b710010d715ed3abc4bcb4a"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>sys_ux_custom_content_root_elem</document>
         <document_key>2041589f1b710010d715ed3abc4bcb4a</document_key>
-        <order>100</order>
+        <order>2</order>
         <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>ajvkumar</sys_created_by>
-        <sys_created_on>2019-12-23 14:23:59</sys_created_on>
-        <sys_id>2041589f1b710010d715ed3abc4bcb4f</sys_id>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2020-04-23 14:27:55</sys_created_on>
+        <sys_id>2f14e8261b90101069977596cc4bcbf3</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>ajvkumar</sys_updated_by>
-        <sys_updated_on>2019-12-23 14:23:59</sys_updated_on>
-        <value>Inbox</value>
-        <variable display_value="">965d108e0f203300bb57f4a1ff767e8d</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_ux_custom_content_root_elem</document>
-        <document_key>2041589f1b710010d715ed3abc4bcb4a</document_key>
-        <order>100</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>ajvkumar</sys_created_by>
-        <sys_created_on>2019-12-23 14:23:59</sys_created_on>
-        <sys_id>6c41589f1b710010d715ed3abc4bcb4e</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>ajvkumar</sys_updated_by>
-        <sys_updated_on>2019-12-23 14:23:59</sys_updated_on>
-        <value>inbox-outline</value>
-        <variable display_value="">d13d9c4e0f203300bb57f4a1ff767eb8</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_ux_custom_content_root_elem</document>
-        <document_key>2041589f1b710010d715ed3abc4bcb4a</document_key>
-        <order>100</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>ajvkumar</sys_created_by>
-        <sys_created_on>2019-12-23 14:23:59</sys_created_on>
-        <sys_id>a841589f1b710010d715ed3abc4bcb4e</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>ajvkumar</sys_updated_by>
-        <sys_updated_on>2019-12-23 14:23:59</sys_updated_on>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2020-04-23 14:27:55</sys_updated_on>
         <value>inbox</value>
-        <variable display_value="">31fc1c4e0f203300bb57f4a1ff767e10</variable>
+        <variable display_value="">830fcb250c232cf2ced38f15369adf4e</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_ux_custom_content_root_elem</document>
+        <document_key>2041589f1b710010d715ed3abc4bcb4a</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2020-04-23 14:27:55</sys_created_on>
+        <sys_id>ab14e8261b90101069977596cc4bcbf3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2020-04-23 14:27:55</sys_updated_on>
+        <value>Inbox</value>
+        <variable display_value="">b5b65fd20c3c13fbd299dce1ef797184</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_ux_custom_content_root_elem</document>
+        <document_key>2041589f1b710010d715ed3abc4bcb4a</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2020-04-23 14:27:55</sys_created_on>
+        <sys_id>e714e8261b90101069977596cc4bcbf3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2020-04-23 14:27:55</sys_updated_on>
+        <value>inbox-outline</value>
+        <variable display_value="">674bdc908b8ed17eb631bec92971a228</variable>
     </sys_variable_value>
 </record_update>

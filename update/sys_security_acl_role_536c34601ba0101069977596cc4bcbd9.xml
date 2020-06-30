@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>ajvkumar</sys_created_by>
+        <sys_created_on>2020-04-29 21:21:58</sys_created_on>
+        <sys_id>536c34601ba0101069977596cc4bcbd9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_105558_sia_adapt_mytable.x_105558_sia_adapt.mytable_user</sys_name>
+        <sys_package display_value="SIA-Adapter" source="x_105558_sia_adapt">c1ff409b1b710010d715ed3abc4bcb47</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SIA-Adapter">c1ff409b1b710010d715ed3abc4bcb47</sys_scope>
+        <sys_security_acl display_value="x_105558_sia_adapt_mytable">df6c34601ba0101069977596cc4bcbd5</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_536c34601ba0101069977596cc4bcbd9</sys_update_name>
+        <sys_updated_by>ajvkumar</sys_updated_by>
+        <sys_updated_on>2020-04-29 21:21:58</sys_updated_on>
+        <sys_user_role display_value="x_105558_sia_adapt.mytable_user" name="x_105558_sia_adapt.mytable_user">cf6c34601ba0101069977596cc4bcbac</sys_user_role>
+        <transaction_id/>
+    </sys_security_acl_role>
+</record_update>
