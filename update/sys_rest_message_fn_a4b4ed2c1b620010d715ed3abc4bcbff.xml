@@ -26,7 +26,7 @@
         <sys_updated_by>ajvkumar</sys_updated_by>
         <sys_updated_on>2020-02-21 11:21:37</sys_updated_on>
         <use_basic_auth>false</use_basic_auth>
-        <use_mid_server display_value="SIA-Testing-MidServer">ecf627451b220010d715ed3abc4bcb3e</use_mid_server>
+        <use_mid_server/>
         <use_mutual_auth>false</use_mutual_auth>
     </sys_rest_message_fn>
 </record_update>

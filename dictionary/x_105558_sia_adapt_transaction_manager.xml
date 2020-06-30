@@ -17,6 +17,8 @@
                 <element inactive_on_update="false" label="Incident" sequence="1" value="Incident"/>
                 <element inactive_on_update="false" label="Problem" sequence="2" value="Problem"/>
                 <element inactive_on_update="false" label="ServiceRequest" sequence="3" value="ServiceRequest"/>
+                <element inactive_on_update="false" label="ServiceCI" sequence="4" value="ServiceCI"/>
+                <element inactive_on_update="false" label="SupportGroup" sequence="5" value="SupportGroup"/>
             </choice>
         </element>
         <element label="File Name" max_length="200" name="file_name" type="string"/>
@@ -35,6 +37,8 @@
                 <element inactive_on_update="false" label="NewTicket" sequence="1" value="NewTicket"/>
                 <element inactive_on_update="false" label="TicketUpdate" sequence="2" value="TicketUpdate"/>
                 <element inactive_on_update="false" label="WorkNotes" sequence="3" value="WorkNotes"/>
+                <element inactive_on_update="false" label="CI_Upsert" sequence="4" value="CI_Upsert"/>
+                <element inactive_on_update="false" label="SupportGroup_Upsert" sequence="6" value="SupportGroup_Upsert"/>
             </choice>
         </element>
         <element label="Payload" max_length="4000" name="payload" type="string"/>

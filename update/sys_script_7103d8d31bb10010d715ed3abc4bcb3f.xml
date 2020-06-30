@@ -28,7 +28,7 @@
         <rest_variables/>
         <role_conditions/>
         <script><![CDATA[//This business rules is going to push all the newly created incidents to the Transaction Manager table.
-gs.addInfoMessage('User name is: '+current.caller_id.user_name);
+//gs.addInfoMessage('User name is: '+current.caller_id.user_name);
 (function executeRule(current, previous /*null when async*/) 
  {
 	
@@ -152,7 +152,7 @@ gs.addInfoMessage('User name is: '+current.caller_id.user_name);
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>7103d8d31bb10010d715ed3abc4bcb3f</sys_id>
-        <sys_mod_count>14</sys_mod_count>
+        <sys_mod_count>15</sys_mod_count>
         <sys_name>NewIncident</sys_name>
         <sys_overrides/>
         <sys_package display_value="SIA-Adapter" source="x_105558_sia_adapt">c1ff409b1b710010d715ed3abc4bcb47</sys_package>
@@ -160,7 +160,7 @@ gs.addInfoMessage('User name is: '+current.caller_id.user_name);
         <sys_scope display_value="SIA-Adapter">c1ff409b1b710010d715ed3abc4bcb47</sys_scope>
         <sys_update_name>sys_script_7103d8d31bb10010d715ed3abc4bcb3f</sys_update_name>
         <sys_updated_by>ajvkumar</sys_updated_by>
-        <sys_updated_on>2020-02-18 14:23:50</sys_updated_on>
+        <sys_updated_on>2020-06-30 13:48:51</sys_updated_on>
         <template/>
         <when>async</when>
     </sys_script>
