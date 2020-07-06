@@ -1,3 +1,3 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element label="MyTable" max_length="40" name="x_105558_sia_adapt_mytable" sizeclass="0" type="collection"/>
+    <element label="MyTable" max_length="40" name="x_105558_sia_adapt_mytable" type="collection"/>
 </database>
