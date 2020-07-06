@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="x_105558_sia_adapt_transaction_manager">
+    <x_105558_sia_adapt_transaction_manager action="INSERT_OR_UPDATE">
+        <assigned_to/>
+        <assignment_group/>
+        <caller_requested_for/>
+        <content_type/>
+        <description/>
+        <direction>Outbound</direction>
+        <entity>ServiceCI</entity>
+        <file_name/>
+        <impact/>
+        <nnitid/>
+        <number>TXN000000000000003</number>
+        <operation>CI_Upsert</operation>
+        <payload>{"Description":"","ServiceCorrelationID":"64ee41561bf1101069977596cc4bcbeb","ServiceName":"Hempel-NNIT-ServiceCI13","State":"Active","Urgency":"High"}</payload>
+        <priority/>
+        <resolution/>
+        <response/>
+        <response_code/>
+        <service_ci display_value="Hempel-NNIT-ServiceCI13">64ee41561bf1101069977596cc4bcbeb</service_ci>
+        <short_description>2 - somewhat critical</short_description>
+        <size_bytes/>
+        <state>Active</state>
+        <status_reason/>
+        <sys_class_name>x_105558_sia_adapt_transaction_manager</sys_class_name>
+        <sys_created_by>ajvkumar</sys_created_by>
+        <sys_created_on>2020-07-06 12:30:29</sys_created_on>
+        <sys_id>a4ee41561bf1101069977596cc4bcbec</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SIA-Adapter" source="x_105558_sia_adapt">c1ff409b1b710010d715ed3abc4bcb47</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SIA-Adapter">c1ff409b1b710010d715ed3abc4bcb47</sys_scope>
+        <sys_update_name>x_105558_sia_adapt_transaction_manager_a4ee41561bf1101069977596cc4bcbec</sys_update_name>
+        <sys_updated_by>ajvkumar</sys_updated_by>
+        <sys_updated_on>2020-07-06 12:30:29</sys_updated_on>
+        <ticket_number/>
+        <transaction_status>New</transaction_status>
+        <urgency/>
+    </x_105558_sia_adapt_transaction_manager>
+</record_update>

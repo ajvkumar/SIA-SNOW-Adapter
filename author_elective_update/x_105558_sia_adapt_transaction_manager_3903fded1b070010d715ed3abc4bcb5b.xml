@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="x_105558_sia_adapt_transaction_manager">
+    <x_105558_sia_adapt_transaction_manager action="DELETE">
+        <assigned_to display_value="Fred Luddy">5137153cc611227c000bbd1bd8cd2005</assigned_to>
+        <assignment_group display_value="ATF_TestGroup_Network" name="ATF_TestGroup_Network">3cc3c7680b982300cac6c08393673a03</assignment_group>
+        <caller_requested_for display_value="Jitendra Alampalle">be7cc05b1b710010d715ed3abc4bcb51</caller_requested_for>
+        <content_type/>
+        <description>Test ticket with user. - Description.</description>
+        <direction>Outbound</direction>
+        <entity>Incident</entity>
+        <file_name/>
+        <impact>3</impact>
+        <nnitid/>
+        <number>TXN000000000000063</number>
+        <operation>NewTicket</operation>
+        <payload>{"CorrelationID":"INC0010035","Description":"Test ticket with user. - Description.","GxPImpact":"No","Impact":"Low","Requester":{},"Resolution":"","Service":"Bond Trading","Source":"","State":"In Progress","Summary":"Test ticket with user.","Urgency":"Low"}</payload>
+        <priority>5</priority>
+        <resolution/>
+        <response/>
+        <response_code/>
+        <service_ci display_value="Bond Trading">451047c6c0a8016400de0ae6df9b9d76</service_ci>
+        <short_description>Test ticket with user.</short_description>
+        <size_bytes/>
+        <state>In Progress</state>
+        <status_reason/>
+        <sys_class_name>x_105558_sia_adapt_transaction_manager</sys_class_name>
+        <sys_created_by>ajvkumar</sys_created_by>
+        <sys_created_on>2020-02-18 14:20:16</sys_created_on>
+        <sys_id>3903fded1b070010d715ed3abc4bcb5b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SIA-Adapter" source="x_105558_sia_adapt">c1ff409b1b710010d715ed3abc4bcb47</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SIA-Adapter">c1ff409b1b710010d715ed3abc4bcb47</sys_scope>
+        <sys_update_name>x_105558_sia_adapt_transaction_manager_3903fded1b070010d715ed3abc4bcb5b</sys_update_name>
+        <sys_updated_by>ajvkumar</sys_updated_by>
+        <sys_updated_on>2020-02-18 14:20:16</sys_updated_on>
+        <ticket_number display_value="INC0010035">7ff2fded1b070010d715ed3abc4bcbe5</ticket_number>
+        <transaction_status>New</transaction_status>
+        <urgency>3</urgency>
+    </x_105558_sia_adapt_transaction_manager>
+<sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="SIA-Adapter">c1ff409b1b710010d715ed3abc4bcb47</application>
+        <file_path/>
+        <instance_id>f2e1fd71dbef93400e785d00cf9619d3</instance_id>
+        <instance_name>dev67452</instance_name>
+        <name>x_105558_sia_adapt_transaction_manager_3903fded1b070010d715ed3abc4bcb5b</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_105558_sia_adapt_transaction_manager">
+    <x_105558_sia_adapt_transaction_manager action="INSERT_OR_UPDATE">
+        <assigned_to display_value="Fred Luddy">5137153cc611227c000bbd1bd8cd2005</assigned_to>
+        <assignment_group display_value="ATF_TestGroup_Network" name="ATF_TestGroup_Network">3cc3c7680b982300cac6c08393673a03</assignment_group>
+        <caller_requested_for display_value="Jitendra Alampalle">be7cc05b1b710010d715ed3abc4bcb51</caller_requested_for>
+        <content_type/>
+        <description>Test ticket with user. - Description.</description>
+        <direction>Outbound</direction>
+        <entity>Incident</entity>
+        <file_name/>
+        <impact>3</impact>
+        <nnitid/>
+        <number>TXN000000000000063</number>
+        <operation>NewTicket</operation>
+        <payload>{"CorrelationID":"INC0010035","Description":"Test ticket with user. - Description.","GxPImpact":"No","Impact":"Low","Requester":{},"Resolution":"","Service":"Bond Trading","Source":"","State":"In Progress","Summary":"Test ticket with user.","Urgency":"Low"}</payload>
+        <priority>5</priority>
+        <resolution/>
+        <response/>
+        <response_code/>
+        <service_ci display_value="Bond Trading">451047c6c0a8016400de0ae6df9b9d76</service_ci>
+        <short_description>Test ticket with user.</short_description>
+        <size_bytes/>
+        <state>In Progress</state>
+        <status_reason/>
+        <sys_class_name>x_105558_sia_adapt_transaction_manager</sys_class_name>
+        <sys_created_by>ajvkumar</sys_created_by>
+        <sys_created_on>2020-02-18 14:20:16</sys_created_on>
+        <sys_id>3903fded1b070010d715ed3abc4bcb5b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SIA-Adapter" source="x_105558_sia_adapt">c1ff409b1b710010d715ed3abc4bcb47</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SIA-Adapter">c1ff409b1b710010d715ed3abc4bcb47</sys_scope>
+        <sys_update_name>x_105558_sia_adapt_transaction_manager_3903fded1b070010d715ed3abc4bcb5b</sys_update_name>
+        <sys_updated_by>ajvkumar</sys_updated_by>
+        <sys_updated_on>2020-02-18 14:20:16</sys_updated_on>
+        <ticket_number display_value="INC0010035">7ff2fded1b070010d715ed3abc4bcbe5</ticket_number>
+        <transaction_status>New</transaction_status>
+        <urgency>3</urgency>
+    </x_105558_sia_adapt_transaction_manager>
+</record_update>]]></payload>
+        <payload_hash>1046194671</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>ce6ccd921bf1101069977596cc4bcbfc</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by>ajvkumar</sys_created_by>
+        <sys_created_on>2020-07-06 12:19:52</sys_created_on>
+        <sys_id>d57c05d21bf1101069977596cc4bcb39</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17324117c260000001</sys_recorded_at>
+        <sys_updated_by>ajvkumar</sys_updated_by>
+        <sys_updated_on>2020-07-06 12:19:52</sys_updated_on>
+        <type>Transaction Manager</type>
+        <update_guid>557c05d25df11010053da220983ffe39</update_guid>
+        <update_guid_history>557c05d25df11010053da220983ffe39:0,b503f121214700102b1cd7f63311227e:1270931435</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">3cde49561bf1101069977596cc4bcb6b</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>ajvkumar</sys_created_by>
+        <sys_created_on>2020-07-06 12:30:13</sys_created_on>
+        <sys_db_object display_value="" name="x_105558_sia_adapt_transaction_manager">x_105558_sia_adapt_transaction_manager</sys_db_object>
+        <sys_id>209ce7e5dd3949c89295e69cc05c0040</sys_id>
+        <sys_metadata>3903fded1b070010d715ed3abc4bcb5b</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SIA-Adapter" source="x_105558_sia_adapt">c1ff409b1b710010d715ed3abc4bcb47</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="SIA-Adapter">c1ff409b1b710010d715ed3abc4bcb47</sys_scope>
+        <sys_scope_delete display_value="">13dc5b87f143446e981b22a244162cc1</sys_scope_delete>
+        <sys_update_name>x_105558_sia_adapt_transaction_manager_3903fded1b070010d715ed3abc4bcb5b</sys_update_name>
+        <sys_update_version display_value="x_105558_sia_adapt_transaction_manager_3903fded1b070010d715ed3abc4bcb5b">d57c05d21bf1101069977596cc4bcb39</sys_update_version>
+        <sys_updated_by>ajvkumar</sys_updated_by>
+        <sys_updated_on>2020-07-06 12:30:13</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="x_105558_sia_adapt_transaction_manager">
+    <x_105558_sia_adapt_transaction_manager action="DELETE">
+        <assigned_to/>
+        <assignment_group display_value="ATF_TestGroup_Network" name="ATF_TestGroup_Network">3cc3c7680b982300cac6c08393673a03</assignment_group>
+        <caller_requested_for/>
+        <content_type/>
+        <description>This is a test ticket.</description>
+        <direction>Outbound</direction>
+        <entity>Incident</entity>
+        <file_name/>
+        <impact>3</impact>
+        <nnitid>ITINC0004061174</nnitid>
+        <number>TXN000000000000056</number>
+        <operation>NewTicket</operation>
+        <payload>{"CorrelationID":"INC0010030","Description":"This is a test ticket.","GxPImpact":"No","Impact":"Low","Requester":"Jitendra Alampalle","Resolution":"","Service":"Blackberry","Source":"","State":"Open","Summary":"Test ticket","Urgency":"Low"}</payload>
+        <priority>5</priority>
+        <resolution/>
+        <response>{&#13;
+  "NNITID" : "ITINC0004061174",&#13;
+  "CorrelationID" : "INC0010030"&#13;
+}</response>
+        <response_code>200</response_code>
+        <service_ci display_value="Blackberry">27d3f35cc0a8000b001df42d019a418f</service_ci>
+        <short_description>Test ticket</short_description>
+        <size_bytes/>
+        <state>New</state>
+        <status_reason/>
+        <sys_class_name>x_105558_sia_adapt_transaction_manager</sys_class_name>
+        <sys_created_by>ajvkumar</sys_created_by>
+        <sys_created_on>2020-02-12 13:50:56</sys_created_on>
+        <sys_id>f1c2f2ef1b320010d715ed3abc4bcbd4</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SIA-Adapter" source="x_105558_sia_adapt">c1ff409b1b710010d715ed3abc4bcb47</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SIA-Adapter">c1ff409b1b710010d715ed3abc4bcb47</sys_scope>
+        <sys_update_name>x_105558_sia_adapt_transaction_manager_f1c2f2ef1b320010d715ed3abc4bcbd4</sys_update_name>
+        <sys_updated_by>ajvkumar</sys_updated_by>
+        <sys_updated_on>2020-02-12 13:51:05</sys_updated_on>
+        <ticket_number display_value="INC0010030">e0c236ef1b320010d715ed3abc4bcb74</ticket_number>
+        <transaction_status>Processed</transaction_status>
+        <urgency>3</urgency>
+    </x_105558_sia_adapt_transaction_manager>
+<sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="SIA-Adapter">c1ff409b1b710010d715ed3abc4bcb47</application>
+        <file_path/>
+        <instance_id>f2e1fd71dbef93400e785d00cf9619d3</instance_id>
+        <instance_name>dev67452</instance_name>
+        <name>x_105558_sia_adapt_transaction_manager_f1c2f2ef1b320010d715ed3abc4bcbd4</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_105558_sia_adapt_transaction_manager">
+    <x_105558_sia_adapt_transaction_manager action="INSERT_OR_UPDATE">
+        <assigned_to/>
+        <assignment_group display_value="ATF_TestGroup_Network" name="ATF_TestGroup_Network">3cc3c7680b982300cac6c08393673a03</assignment_group>
+        <caller_requested_for/>
+        <content_type/>
+        <description>This is a test ticket.</description>
+        <direction>Outbound</direction>
+        <entity>Incident</entity>
+        <file_name/>
+        <impact>3</impact>
+        <nnitid>ITINC0004061174</nnitid>
+        <number>TXN000000000000056</number>
+        <operation>NewTicket</operation>
+        <payload>{"CorrelationID":"INC0010030","Description":"This is a test ticket.","GxPImpact":"No","Impact":"Low","Requester":"Jitendra Alampalle","Resolution":"","Service":"Blackberry","Source":"","State":"Open","Summary":"Test ticket","Urgency":"Low"}</payload>
+        <priority>5</priority>
+        <resolution/>
+        <response>{&#13;
+  "NNITID" : "ITINC0004061174",&#13;
+  "CorrelationID" : "INC0010030"&#13;
+}</response>
+        <response_code>200</response_code>
+        <service_ci display_value="Blackberry">27d3f35cc0a8000b001df42d019a418f</service_ci>
+        <short_description>Test ticket</short_description>
+        <size_bytes/>
+        <state>New</state>
+        <status_reason/>
+        <sys_class_name>x_105558_sia_adapt_transaction_manager</sys_class_name>
+        <sys_created_by>ajvkumar</sys_created_by>
+        <sys_created_on>2020-02-12 13:50:56</sys_created_on>
+        <sys_id>f1c2f2ef1b320010d715ed3abc4bcbd4</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SIA-Adapter" source="x_105558_sia_adapt">c1ff409b1b710010d715ed3abc4bcb47</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SIA-Adapter">c1ff409b1b710010d715ed3abc4bcb47</sys_scope>
+        <sys_update_name>x_105558_sia_adapt_transaction_manager_f1c2f2ef1b320010d715ed3abc4bcbd4</sys_update_name>
+        <sys_updated_by>ajvkumar</sys_updated_by>
+        <sys_updated_on>2020-02-12 13:51:05</sys_updated_on>
+        <ticket_number display_value="INC0010030">e0c236ef1b320010d715ed3abc4bcb74</ticket_number>
+        <transaction_status>Processed</transaction_status>
+        <urgency>3</urgency>
+    </x_105558_sia_adapt_transaction_manager>
+</record_update>]]></payload>
+        <payload_hash>2073662746</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>ce6ccd921bf1101069977596cc4bcbfc</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by>ajvkumar</sys_created_by>
+        <sys_created_on>2020-07-06 12:19:53</sys_created_on>
+        <sys_id>217c05d21bf1101069977596cc4bcb8a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17324117fb30000001</sys_recorded_at>
+        <sys_updated_by>ajvkumar</sys_updated_by>
+        <sys_updated_on>2020-07-06 12:19:53</sys_updated_on>
+        <type>Transaction Manager</type>
+        <update_guid>ad7c05d235f11010020ead0d9e10fe89</update_guid>
+        <update_guid_history>ad7c05d235f11010020ead0d9e10fe89:0,ccd2f6ef503200107cb409b74a7df1d6:-1362245193,3dc2f2ef3932001021dbbf14b0865fd5:-1159742104</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">55de89561bf1101069977596cc4bcb14</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>ajvkumar</sys_created_by>
+        <sys_created_on>2020-07-06 12:30:15</sys_created_on>
+        <sys_db_object display_value="" name="x_105558_sia_adapt_transaction_manager">x_105558_sia_adapt_transaction_manager</sys_db_object>
+        <sys_id>e729efacb6f14994a3f985102fc3d5e4</sys_id>
+        <sys_metadata>f1c2f2ef1b320010d715ed3abc4bcbd4</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SIA-Adapter" source="x_105558_sia_adapt">c1ff409b1b710010d715ed3abc4bcb47</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="SIA-Adapter">c1ff409b1b710010d715ed3abc4bcb47</sys_scope>
+        <sys_scope_delete display_value="">13dc5b87f143446e981b22a244162cc1</sys_scope_delete>
+        <sys_update_name>x_105558_sia_adapt_transaction_manager_f1c2f2ef1b320010d715ed3abc4bcbd4</sys_update_name>
+        <sys_update_version display_value="x_105558_sia_adapt_transaction_manager_f1c2f2ef1b320010d715ed3abc4bcbd4">217c05d21bf1101069977596cc4bcb8a</sys_update_version>
+        <sys_updated_by>ajvkumar</sys_updated_by>
+        <sys_updated_on>2020-07-06 12:30:15</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

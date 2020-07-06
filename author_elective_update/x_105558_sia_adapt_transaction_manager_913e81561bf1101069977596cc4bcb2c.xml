@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="x_105558_sia_adapt_transaction_manager">
+    <x_105558_sia_adapt_transaction_manager action="DELETE">
+        <assigned_to/>
+        <assignment_group/>
+        <caller_requested_for/>
+        <content_type/>
+        <description/>
+        <direction>Outbound</direction>
+        <entity>ServiceCI</entity>
+        <file_name/>
+        <impact/>
+        <nnitid/>
+        <number>TXN000000000000002</number>
+        <operation>CI_Upsert</operation>
+        <payload>{"Description":"","ServiceCorrelationID":"953e41561bf1101069977596cc4bcbdf","ServiceName":"Hempel-NNIT-ServiceCI12","State":"Active","Urgency":"High"}</payload>
+        <priority/>
+        <resolution/>
+        <response/>
+        <response_code/>
+        <service_ci display_value="Hempel-NNIT-ServiceCI12">953e41561bf1101069977596cc4bcbdf</service_ci>
+        <short_description>2 - somewhat critical</short_description>
+        <size_bytes/>
+        <state>Active</state>
+        <status_reason/>
+        <sys_class_name>x_105558_sia_adapt_transaction_manager</sys_class_name>
+        <sys_created_by>ajvkumar</sys_created_by>
+        <sys_created_on>2020-07-06 12:27:31</sys_created_on>
+        <sys_id>913e81561bf1101069977596cc4bcb2c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SIA-Adapter" source="x_105558_sia_adapt">c1ff409b1b710010d715ed3abc4bcb47</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SIA-Adapter">c1ff409b1b710010d715ed3abc4bcb47</sys_scope>
+        <sys_update_name>x_105558_sia_adapt_transaction_manager_913e81561bf1101069977596cc4bcb2c</sys_update_name>
+        <sys_updated_by>ajvkumar</sys_updated_by>
+        <sys_updated_on>2020-07-06 12:27:31</sys_updated_on>
+        <ticket_number/>
+        <transaction_status>New</transaction_status>
+        <urgency/>
+    </x_105558_sia_adapt_transaction_manager>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="SIA-Adapter">c1ff409b1b710010d715ed3abc4bcb47</application>
+        <file_path/>
+        <instance_id>f2e1fd71dbef93400e785d00cf9619d3</instance_id>
+        <instance_name>dev67452</instance_name>
+        <name>x_105558_sia_adapt_transaction_manager_913e81561bf1101069977596cc4bcb2c</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_105558_sia_adapt_transaction_manager"><x_105558_sia_adapt_transaction_manager action="INSERT_OR_UPDATE"><assigned_to/><assignment_group/><caller_requested_for/><content_type/><description/><direction>Outbound</direction><entity>ServiceCI</entity><file_name/><impact/><nnitid/><number>TXN000000000000002</number><operation>CI_Upsert</operation><payload>{"Description":"","ServiceCorrelationID":"953e41561bf1101069977596cc4bcbdf","ServiceName":"Hempel-NNIT-ServiceCI12","State":"Active","Urgency":"High"}</payload><priority/><resolution/><response/><response_code/><service_ci display_value="Hempel-NNIT-ServiceCI12">953e41561bf1101069977596cc4bcbdf</service_ci><short_description>2 - somewhat critical</short_description><size_bytes/><state>Active</state><status_reason/><sys_class_name>x_105558_sia_adapt_transaction_manager</sys_class_name><sys_created_by>ajvkumar</sys_created_by><sys_created_on>2020-07-06 12:27:31</sys_created_on><sys_id>913e81561bf1101069977596cc4bcb2c</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package display_value="SIA-Adapter" source="x_105558_sia_adapt">c1ff409b1b710010d715ed3abc4bcb47</sys_package><sys_policy/><sys_scope display_value="SIA-Adapter">c1ff409b1b710010d715ed3abc4bcb47</sys_scope><sys_update_name>x_105558_sia_adapt_transaction_manager_913e81561bf1101069977596cc4bcb2c</sys_update_name><sys_updated_by>ajvkumar</sys_updated_by><sys_updated_on>2020-07-06 12:27:31</sys_updated_on><ticket_number/><transaction_status>New</transaction_status><urgency/></x_105558_sia_adapt_transaction_manager></record_update>]]></payload>
+        <payload_hash>661481176</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>c77c8d121bf1101069977596cc4bcb0c</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>ajvkumar</sys_created_by>
+        <sys_created_on>2020-07-06 12:27:31</sys_created_on>
+        <sys_id>593e81561bf1101069977596cc4bcb2e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17324187e8f0000001</sys_recorded_at>
+        <sys_updated_by>ajvkumar</sys_updated_by>
+        <sys_updated_on>2020-07-06 12:27:31</sys_updated_on>
+        <type>Transaction Manager</type>
+        <update_guid>913e815690f110102de108b3f67b362e</update_guid>
+        <update_guid_history>913e815690f110102de108b3f67b362e:661481176</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">cdde49561bf1101069977596cc4bcbd2</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>ajvkumar</sys_created_by>
+        <sys_created_on>2020-07-06 12:30:14</sys_created_on>
+        <sys_db_object display_value="" name="x_105558_sia_adapt_transaction_manager">x_105558_sia_adapt_transaction_manager</sys_db_object>
+        <sys_id>58830a6ef07842fba11f4585ef303469</sys_id>
+        <sys_metadata>913e81561bf1101069977596cc4bcb2c</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SIA-Adapter" source="x_105558_sia_adapt">c1ff409b1b710010d715ed3abc4bcb47</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="SIA-Adapter">c1ff409b1b710010d715ed3abc4bcb47</sys_scope>
+        <sys_scope_delete display_value="">13dc5b87f143446e981b22a244162cc1</sys_scope_delete>
+        <sys_update_name>x_105558_sia_adapt_transaction_manager_913e81561bf1101069977596cc4bcb2c</sys_update_name>
+        <sys_update_version display_value="x_105558_sia_adapt_transaction_manager_913e81561bf1101069977596cc4bcb2c">593e81561bf1101069977596cc4bcb2e</sys_update_version>
+        <sys_updated_by>ajvkumar</sys_updated_by>
+        <sys_updated_on>2020-07-06 12:30:14</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

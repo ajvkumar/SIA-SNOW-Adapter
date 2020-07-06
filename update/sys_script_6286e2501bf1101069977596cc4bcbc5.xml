@@ -62,12 +62,12 @@
 		if(current.operational_status.getDisplayValue() == "Operational" || current.operational_status.getDisplayValue() == "Ready" || current.operational_status.getDisplayValue() == "Catalog")
 			{
 				newTXNRecord.setValue('state', "Active");
-				jsonPayload.State = "Active";
+				jsonPayload.Status = "Active";
 			}
 		else
 			{
 				newTXNRecord.setValue('state', "Inactive");
-				jsonPayload.State = "Inactive";
+				jsonPayload.Status = "Inactive";
 			}
 		
 		//Check the urgency and convert it into the SIA standards.
@@ -99,7 +99,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>6286e2501bf1101069977596cc4bcbc5</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_name>Create-Update-ServiceCI</sys_name>
         <sys_overrides/>
         <sys_package display_value="SIA-Adapter" source="x_105558_sia_adapt">c1ff409b1b710010d715ed3abc4bcb47</sys_package>
@@ -107,7 +107,7 @@
         <sys_scope display_value="SIA-Adapter">c1ff409b1b710010d715ed3abc4bcb47</sys_scope>
         <sys_update_name>sys_script_6286e2501bf1101069977596cc4bcbc5</sys_update_name>
         <sys_updated_by>ajvkumar</sys_updated_by>
-        <sys_updated_on>2020-07-06 12:25:09</sys_updated_on>
+        <sys_updated_on>2020-07-06 12:42:32</sys_updated_on>
         <template/>
         <when>after</when>
     </sys_script>
